@@ -7,6 +7,10 @@
 
 <hr>
 
+
+# ⌘I
+<hr>
+
 <h2>  学习资料 </h2>
 
 <div>
@@ -39,11 +43,22 @@ Symbol Name
 </tr>
 </table>
 </div>
-<hr>
 
 
 
 <hr>
+
+<hr>
+
+
+<img src="Images/open-in-xcode-button">
+
+
+<hr>
+
+<hr>
+
+
 
 
 
@@ -75,6 +90,10 @@ Scan the results to identify which rows have the highest percentage in the Weigh
 我注意到： call Tree Symbol 的 第一级 是实际的 方法里。 第二级 就是 调用 上一个方法的代理方法里了。
 
 <hr>
+
+
+
+### Tip Two:
 
 
 Now click the small arrow to the left of the applyTonalFilter row at the top of the table. This will show the caller of applyTonalFilter. You may need to unfold the next row too; when profiling Swift, there will sometimes be duplicate rows in the Call Tree, prefixed with @objc. You’re interested in the first row that’s prefixed with the “person” symbol, which indicates it belongs to your app’s target:

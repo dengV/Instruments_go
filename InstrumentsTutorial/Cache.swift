@@ -13,9 +13,18 @@ class ImageCache {
   }
   
   func loadThumbnail(for photo: FlickrPhoto, completion: @escaping FlickrAPI.FetchImageCompletion) {
-    FlickrAPI.loadImage(for: photo, withSize: "m") { result in
-      completion(result)
+    
+    if let image = ImageCache.shared.image(forKey: photo.id){
+        completion(Result.success(image))
     }
+    else{
+        FlickrAPI.loadImage(for: photo, withSize: "m") { result in
+            if case .success(let image) = result {
+                ImageCache.shared.set(image, forKey: photo.id)
+            }// if case .success(let image) = result
+            completion(result)
+        }
+    }// if let image = ImageCache.shared.image(forKey:
   }
 }
 
