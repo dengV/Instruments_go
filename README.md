@@ -24,6 +24,10 @@
 
 </div>
 <hr>
+<img src="Images/Memory_Inspector">
+<center><strong>Memory Inspector</strong></center>
+
+
 <div>
 <table>
 <tr>
@@ -41,6 +45,36 @@ Symbol Name
 
 </td>
 </tr>
+
+<tr>
+<th>Allocation</th>
+<td>
+ All Heap and Anonymous VM.
+
+</td>
+<td>
+generation analysis
+</td>
+<td>
+Mark Generation
+</td>
+</tr>
+
+<tr>
+<th>the Visual Memory Debugger</th>
+<td>
+
+Malloc Stack 
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+</tr>
+
+
 </table>
 </div>
 

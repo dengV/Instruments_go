@@ -4,6 +4,9 @@ import UIKit
 
 class ImageCache {
   
+    
+    
+    
   private static let _shared = ImageCache()
   
   var images = [String:UIImage]()
@@ -11,6 +14,15 @@ class ImageCache {
   static var shared: ImageCache {
     return _shared
   }
+    
+    
+    init() {
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationDidReceiveMemoryWarning, object: nil, queue: .main) { [weak self] notification in
+            self?.images.removeAll(keepingCapacity: false)
+        }
+    }
+    
+    
   
   func loadThumbnail(for photo: FlickrPhoto, completion: @escaping FlickrAPI.FetchImageCompletion) {
     
@@ -26,6 +38,15 @@ class ImageCache {
         }
     }// if let image = ImageCache.shared.image(forKey:
   }
+    
+    
+    
+    
+    deinit{
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    
 }
 
 // MARK: - Custom Accessors
