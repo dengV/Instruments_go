@@ -24,7 +24,7 @@
 
 </div>
 <hr>
-<img src="Images/Memory_Inspector">
+<img src="Images/Memory_Inspector.png">
 <center><strong>Memory Inspector</strong></center>
 
 
@@ -85,7 +85,7 @@ Malloc Stack
 <hr>
 
 
-<img src="Images/open-in-xcode-button">
+<img src="Images/open-in-xcode-button.png">
 
 
 <hr>
