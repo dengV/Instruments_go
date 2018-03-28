@@ -27,19 +27,33 @@
                 <td></td>
             </tr>
             <tr>
-                <th></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th>Panel </th>
+                <td>These are the recording controls. The red ‘record’ button will stop & start the app currently being profiled when it is clicked (it toggles between a record and stop icon). The pause button does exactly what you’d expect and pauses the current execution of the app.
+                
+                    </td>
+                <td> This is called a track. In the case of the Time Profiler template you selected, there’s just one instrument so there’s just one track. You’ll learn more about the specifics of the graph shown here later in the tutorial.</td>
+                <td>This is the detail panel. It shows the main information about the particular instrument you’re using. In this case, it’s showing the methods which are “hottest” — that is, the ones that have used up the most CPU time.
+                   <br> Click on the bar at the top of this area on the word Profile and select Samples. Here you can view every single sample. Click on a few samples, and you’ll see the captured stack trace appear in the Extended Detail inspector to the right. Switch back to Profile when you’re done.
+                    </td>
+                <td>This is the inspectors panel. There are two inspectors: Extended Detail and Run Info. You’ll be learning more about these options shortly.</td>
+                <td> This is the run timer. The timer counts how long the app being profiled has been running, and how many times it has been run. Click the stop button and then restart the app, you’ll see the display now show Run 2 of 2.</td>
             </tr>
             <tr>
-                <th></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th>To help pinpoint the problem, you’ll set some options. Click the Stop button and, below the detail panel, click the Call Tree button. In the popover that appears, select Separate by Thread, Invert Call Tree and Hide System Libraries. It will look like this:</th>
+                <td>Here’s what each option is doing to the data displayed in the table to the left:
+                    
+                    </td>
+                <td>Separate by State: This option groups results by your application’s life cycle state and is a useful way to inspect how much work your app is doing and when.
+                    </td>
+                <td>Separate by Thread: Each thread should be considered separately. This enables you to understand which threads are responsible for the greatest amount of CPU use.
+</td>
+                <td>                    Invert Call Tree: With this option, the stack trace is considered from most recent to least recent.
+                   </td>
+                <td> Hide System Libraries: When this option is selected, only symbols from your own app are displayed. It’s often useful to select this option, since usually you only care about where the CPU is spending time in your own code – you can’t do much about how much CPU the system libraries are using!
+                   </td>
+                <td> Flatten Recursion: This option treats recursive functions (ones which call themselves) as one entry in each stack trace, rather than multiple.
+</td>
+                <td>                    Top Functions: Enabling this makes Instruments consider the total time spent in a function as the sum of the time directly within that function, as well as the time spent in functions called by that function. So if function A calls B, then A’s time is reported as the time spent in A PLUS the time spent in B. This can be really useful, as it lets you pick the largest time figure each time you descend into the call stack, zeroing in on your most time-consuming methods.</td>
                 <td></td>
             </tr>
             <tr>
