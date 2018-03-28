@@ -41,3 +41,22 @@ extension UINavigationController {
         return .lightContent
     }
 }
+
+
+
+/*
+ From Xcode’s menu bar, select Product\Profile, or press ⌘I. This will build the app and launch Instruments. You will be greeted with a selection window that looks like this:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Select the Time Profiler instrument and click Choose. This will open up a new Instruments document. Click the red record button in the top left to start recording and launch the app. You may be asked for your password to authorize Instruments to analyze other processes — fear not, it’s safe to provide here! :]
+ 
+ In the Instruments window, you can see the time counting up, and a little arrow moving from left to right above the graph in the center of the screen. This indicates that the app is running.
+ */
