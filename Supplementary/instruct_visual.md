@@ -9,5 +9,5 @@ Quit the Allocations instrument and exit the Instruments suite.
 
 <hr>
 
-<img src="/master/Images/visual_memory_debugger.png">
+<img src="https://github.com/dengV/Instruments_go/blob/master/Images/visual_memory_debugger.png">
 <center><strong>Memory Inspector</strong></center>
