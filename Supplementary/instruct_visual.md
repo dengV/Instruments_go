@@ -10,5 +10,5 @@ Quit the Allocations instrument and exit the Instruments suite.
 <hr>
 
 
-<img src="Images/visual_memory_debugger.png">
+<img src="~/Images/visual_memory_debugger.png">
 <center><strong>Memory Inspector</strong></center>
