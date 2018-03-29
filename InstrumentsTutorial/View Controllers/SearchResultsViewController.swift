@@ -30,8 +30,8 @@ extension SearchResultsViewController: UICollectionViewDataSource {
     if let flickrPhoto = searchResults?.searchResults[indexPath.item] {
       cell.flickrPhoto = flickrPhoto
       
-      cell.heartToggleHandler = { isStarred in
-        self.collectionView.reloadItems(at: [ indexPath ])
+      cell.heartToggleHandler = { [weak self] isStarred in
+        self?.collectionView.reloadItems(at: [ indexPath ])
       }
       
       ImageCache.shared.loadThumbnail(for: flickrPhoto) { result in
