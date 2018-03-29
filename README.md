@@ -20,6 +20,12 @@
 <a href="https://www.raywenderlich.com/166125/instruments-tutorial-swift-getting-started"> Instruments Tutorial with Swift: Getting Started</a>
 </li>
 
+
+<li>
+<a href="https://videos.raywenderlich.com/courses/74-practical-instruments/lessons/3">
+Practical Instruments
+</a>
+</li>
 </ul>
 
 </div>
@@ -96,6 +102,8 @@ Malloc Stack
 
 
 
+
+
 ### In this tutorial you’re going to learn:
 
 * How to determine hot-spots in your code using the Time Profiler instrument in order to make your code more efficient, and
@@ -127,7 +135,7 @@ Scan the results to identify which rows have the highest percentage in the Weigh
 
 
 
-### Tip Two:
+### Tip Three:
 
 
 Now click the small arrow to the left of the applyTonalFilter row at the top of the table. This will show the caller of applyTonalFilter. You may need to unfold the next row too; when profiling Swift, there will sometimes be duplicate rows in the Call Tree, prefixed with @objc. You’re interested in the first row that’s prefixed with the “person” symbol, which indicates it belongs to your app’s target:
@@ -135,6 +143,32 @@ Now click the small arrow to the left of the applyTonalFilter row at the top of 
 
 我们关心的 是 Call Tree 中  prefixed with the “person” symbol （就是 前面 带小人图标的）。 影响的（起作用的是）我们写的方法，可以调整的。
 
+
+
+
+<hr>
+
+
+### Tip Four:
+
+* Debug Information Format : DWARF with dSYM file  :
+
+Get method names in the stack tree outputs.
+
+
+* Hide System Libraries
+
+* Invert Call Tree : See the leaves on the top (方法 倒置)
+
+
+> Quick Tip, 关于展开的 方式
+If you hold option ,
+And then click this triangle,
+It will do all the drilling for u.
+(彻底 展开)
+
+
+* 选择特定的 时间段分析
 
 
 <hr>
