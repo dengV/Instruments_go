@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>name 1</string>
+		<key>details</key>
+		<string>details 1</string>
+		<key>priceGuide</key>
+		<integer>1</integer>
+		<key>rating</key>
+		<integer>1</integer>
+		<key>imageName</key>
+		<string>pancake1</string>
+		<key>thumbnailName</key>
+		<string>pancake1_thumb</string>
+		<key>longitude</key>
+		<real>1</real>
+		<key>latitude</key>
+		<real>1</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>name 2</string>
+		<key>details</key>
+		<string>details 2</string>
+		<key>priceGuide</key>
+		<integer>2</integer>
+		<key>rating</key>
+		<integer>2</integer>
+		<key>imageName</key>
+		<string>pancake2</string>
+		<key>thumbnailName</key>
+		<string>pancake2_thumb</string>
+		<key>longitude</key>
+		<real>2</real>
+		<key>latitude</key>
+		<real>2</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>name 3</string>
+		<key>details</key>
+		<string>details 3</string>
+		<key>priceGuide</key>
+		<integer>3</integer>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>imageName</key>
+		<string>pancake3</string>
+		<key>thumbnailName</key>
+		<string>pancake3_thumb</string>
+		<key>longitude</key>
+		<real>3</real>
+		<key>latitude</key>
+		<real>3</real>
+	</dict>
+</array>
+</plist>

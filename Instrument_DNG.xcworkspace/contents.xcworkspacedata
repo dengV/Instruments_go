@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:InstrumentsTutorial.xcodeproj">
+      location = "group:video_instruments/Catstagram.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestDD/StackReview.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Instruments/InstrumentsTutorial.xcodeproj">
    </FileRef>
 </Workspace>
