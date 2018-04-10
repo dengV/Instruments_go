@@ -20,6 +20,9 @@
 		22A7E5851B3AFFFD00F269A3 /* pancake_houses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22A7E5841B3AFFFD00F269A3 /* pancake_houses.plist */; };
 		22A7E5891B3B122400F269A3 /* PancakeHouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A7E5881B3B122400F269A3 /* PancakeHouseTableViewCell.swift */; };
 		22BC601F1B441C9500D3ECDC /* ImageAttributions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 22BC601E1B441C9500D3ECDC /* ImageAttributions.txt */; };
+		23365253207C9D9300D63CAC /* PancakeHouseCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23365252207C9D9300D63CAC /* PancakeHouseCollectionTests.swift */; };
+		23365255207CA18D00D63CAC /* test_pancake_houses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23365254207CA18D00D63CAC /* test_pancake_houses.plist */; };
+		23365257207CA41900D63CAC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23365256207CA41900D63CAC /* Info.plist */; };
 		420902461D939859004DAD49 /* PriceGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420902451D939859004DAD49 /* PriceGuide.swift */; };
 		420902481D9398CB004DAD49 /* PancakeRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420902471D9398CB004DAD49 /* PancakeRating.swift */; };
 		4209024D1D93B398004DAD49 /* BaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209024C1D93B398004DAD49 /* BaseDetailViewController.swift */; };
@@ -28,6 +31,16 @@
 		42AFF7451D98696300DF841D /* CloudNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AFF7441D98696300DF841D /* CloudNetworkError.swift */; };
 		787C1FC91BB3AC5E000B7EA1 /* PancakeHouseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787C1FC81BB3AC5E000B7EA1 /* PancakeHouseCollection.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23365248207C9A2D00D63CAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A7E5621B3AE0E600F269A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A7E5691B3AE0E600F269A3;
+			remoteInfo = StackReview;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		22228A6C1B43EB0D009DB1C2 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -45,6 +58,10 @@
 		22A7E5841B3AFFFD00F269A3 /* pancake_houses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pancake_houses.plist; sourceTree = "<group>"; };
 		22A7E5881B3B122400F269A3 /* PancakeHouseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeHouseTableViewCell.swift; sourceTree = "<group>"; };
 		22BC601E1B441C9500D3ECDC /* ImageAttributions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ImageAttributions.txt; sourceTree = "<group>"; };
+		23365243207C9A2D00D63CAC /* StackReviewUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackReviewUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23365252207C9D9300D63CAC /* PancakeHouseCollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PancakeHouseCollectionTests.swift; sourceTree = "<group>"; };
+		23365254207CA18D00D63CAC /* test_pancake_houses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = test_pancake_houses.plist; path = Resources/test_pancake_houses.plist; sourceTree = SOURCE_ROOT; };
+		23365256207CA41900D63CAC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		420902451D939859004DAD49 /* PriceGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceGuide.swift; sourceTree = "<group>"; };
 		420902471D9398CB004DAD49 /* PancakeRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeRating.swift; sourceTree = "<group>"; };
 		4209024C1D93B398004DAD49 /* BaseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDetailViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +73,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		22A7E5671B3AE0E600F269A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23365240207C9A2D00D63CAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				22A7E56C1B3AE0E600F269A3 /* StackReview */,
+				23365244207C9A2D00D63CAC /* StackReviewUnitTests */,
 				22A7E56B1B3AE0E600F269A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				22A7E56A1B3AE0E600F269A3 /* StackReview.app */,
+				23365243207C9A2D00D63CAC /* StackReviewUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +163,40 @@
 				22A7E5881B3B122400F269A3 /* PancakeHouseTableViewCell.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		23365244207C9A2D00D63CAC /* StackReviewUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				23365256207CA41900D63CAC /* Info.plist */,
+				2336524E207C9BBA00D63CAC /* Case */,
+				2336524D207C9BBA00D63CAC /* Data */,
+				2336524F207C9BBA00D63CAC /* Supporting Files */,
+			);
+			path = StackReviewUnitTests;
+			sourceTree = "<group>";
+		};
+		2336524D207C9BBA00D63CAC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				23365254207CA18D00D63CAC /* test_pancake_houses.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2336524E207C9BBA00D63CAC /* Case */ = {
+			isa = PBXGroup;
+			children = (
+				23365252207C9D9300D63CAC /* PancakeHouseCollectionTests.swift */,
+			);
+			path = Case;
+			sourceTree = "<group>";
+		};
+		2336524F207C9BBA00D63CAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		420902491D93995E004DAD49 /* AppDelegate */ = {
@@ -193,19 +253,45 @@
 			productReference = 22A7E56A1B3AE0E600F269A3 /* StackReview.app */;
 			productType = "com.apple.product-type.application";
 		};
+		23365242207C9A2D00D63CAC /* StackReviewUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2336524C207C9A2D00D63CAC /* Build configuration list for PBXNativeTarget "StackReviewUnitTests" */;
+			buildPhases = (
+				2336523F207C9A2D00D63CAC /* Sources */,
+				23365240207C9A2D00D63CAC /* Frameworks */,
+				23365241207C9A2D00D63CAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23365249207C9A2D00D63CAC /* PBXTargetDependency */,
+			);
+			name = StackReviewUnitTests;
+			productName = StackReviewUnitTests;
+			productReference = 23365243207C9A2D00D63CAC /* StackReviewUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		22A7E5621B3AE0E600F269A3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Razeware;
 				TargetAttributes = {
 					22A7E5691B3AE0E600F269A3 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 9ZPF2ERCW9;
 						LastSwiftMigration = 0800;
+					};
+					23365242207C9A2D00D63CAC = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = 9ZPF2ERCW9;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22A7E5691B3AE0E600F269A3;
 					};
 				};
 			};
@@ -223,6 +309,7 @@
 			projectRoot = "";
 			targets = (
 				22A7E5691B3AE0E600F269A3 /* StackReview */,
+				23365242207C9A2D00D63CAC /* StackReviewUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,6 +324,15 @@
 				22A7E5771B3AE0E600F269A3 /* Assets.xcassets in Resources */,
 				22A7E5751B3AE0E600F269A3 /* Main.storyboard in Resources */,
 				22A7E5851B3AFFFD00F269A3 /* pancake_houses.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23365241207C9A2D00D63CAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23365257207CA41900D63CAC /* Info.plist in Resources */,
+				23365255207CA18D00D63CAC /* test_pancake_houses.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +361,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2336523F207C9A2D00D63CAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23365253207C9D9300D63CAC /* PancakeHouseCollectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23365249207C9A2D00D63CAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A7E5691B3AE0E600F269A3 /* StackReview */;
+			targetProxy = 23365248207C9A2D00D63CAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22A7E5731B3AE0E600F269A3 /* Main.storyboard */ = {
@@ -391,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ZPF2ERCW9;
 				INFOPLIST_FILE = StackReview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.StackReview;
@@ -403,11 +516,64 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ZPF2ERCW9;
 				INFOPLIST_FILE = StackReview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.StackReview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2336524A207C9A2D00D63CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZPF2ERCW9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StackReviewUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dengjiangzhou.StackReviewUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackReview.app/StackReview";
+			};
+			name = Debug;
+		};
+		2336524B207C9A2D00D63CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZPF2ERCW9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StackReviewUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dengjiangzhou.StackReviewUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackReview.app/StackReview";
 			};
 			name = Release;
 		};
@@ -428,6 +594,15 @@
 			buildConfigurations = (
 				22A7E57F1B3AE0E600F269A3 /* Debug */,
 				22A7E5801B3AE0E600F269A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2336524C207C9A2D00D63CAC /* Build configuration list for PBXNativeTarget "StackReviewUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2336524A207C9A2D00D63CAC /* Debug */,
+				2336524B207C9A2D00D63CAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

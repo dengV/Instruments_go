@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,6 +20,7 @@
             <objects>
                 <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.77599471249999996" blue="0.26187586629999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -39,36 +44,48 @@
                         <viewControllerLayoutGuide type="bottom" id="ib3-qy-Rar"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NVH-2s-2SF">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s88-ob-hYh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="5Kz-y6-Mmw"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="5Kz-y6-Mmw">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="241"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Pancake House Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xN7-cz-jCc" customClass="MultilineLabelThatWorks" customModule="StackReview" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="241" width="375" height="47.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                         <color key="textColor" red="0.5253593921661377" green="0.51400119066238403" blue="0.30811551213264465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4i-gc-Yzv" userLabel="YellowBar">
+                                        <rect key="frame" x="0.0" y="288.5" width="375" height="100"/>
                                         <color key="backgroundColor" red="0.98987644910000006" green="0.74416649339999996" blue="0.18423730129999999" alpha="0.23999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EfE-Rq-hVG">
+                                        <rect key="frame" x="0.0" y="288.5" width="375" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNC-lp-lgC">
+                                                <rect key="frame" x="0.0" y="26" width="187.5" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pancake_rate_5" translatesAutoresizingMaskIntoConstraints="NO" id="o1q-VL-lS1"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pancake_rate_5" translatesAutoresizingMaskIntoConstraints="NO" id="o1q-VL-lS1">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="100"/>
+                                            </imageView>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Details about the pancake house" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NH-TZ-7c9" customClass="MultilineLabelThatWorks" customModule="StackReview" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="388.5" width="375" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHm-Bc-v2u"/>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHm-Bc-v2u">
+                                        <rect key="frame" x="0.0" y="409" width="375" height="121"/>
+                                    </mapView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="IHm-Bc-v2u" firstAttribute="centerX" secondItem="s88-ob-hYh" secondAttribute="centerX" id="4gr-vJ-c5u"/>
@@ -82,7 +99,6 @@
                                     <constraint firstItem="EfE-Rq-hVG" firstAttribute="top" secondItem="xN7-cz-jCc" secondAttribute="bottom" id="Frf-9g-Blm"/>
                                     <constraint firstItem="EfE-Rq-hVG" firstAttribute="leading" secondItem="s88-ob-hYh" secondAttribute="leading" id="Ju0-Bu-u9Z"/>
                                     <constraint firstAttribute="trailing" secondItem="5Kz-y6-Mmw" secondAttribute="trailing" id="OdN-nX-qQI"/>
-                                    <constraint firstAttribute="trailing" secondItem="1NH-TZ-7c9" secondAttribute="trailing" id="Ok4-uF-f4i"/>
                                     <constraint firstItem="5Kz-y6-Mmw" firstAttribute="leading" secondItem="s88-ob-hYh" secondAttribute="leading" id="R7T-f1-J6S"/>
                                     <constraint firstAttribute="trailing" secondItem="IHm-Bc-v2u" secondAttribute="trailing" id="Sab-Dc-NBK"/>
                                     <constraint firstItem="IHm-Bc-v2u" firstAttribute="leading" secondItem="s88-ob-hYh" secondAttribute="leading" id="TdQ-Lh-KZv"/>
@@ -95,7 +111,6 @@
                                     <constraint firstAttribute="trailing" secondItem="EfE-Rq-hVG" secondAttribute="trailing" id="obI-m7-va1"/>
                                     <constraint firstItem="T4i-gc-Yzv" firstAttribute="leading" secondItem="EfE-Rq-hVG" secondAttribute="leading" id="p9W-uY-Nfk"/>
                                     <constraint firstItem="5Kz-y6-Mmw" firstAttribute="centerX" secondItem="s88-ob-hYh" secondAttribute="centerX" id="peD-KM-vOa"/>
-                                    <constraint firstItem="xN7-cz-jCc" firstAttribute="leading" secondItem="s88-ob-hYh" secondAttribute="leading" id="rhC-qy-CrZ"/>
                                     <constraint firstAttribute="bottom" secondItem="IHm-Bc-v2u" secondAttribute="bottom" id="uPd-qN-3yN"/>
                                     <constraint firstItem="T4i-gc-Yzv" firstAttribute="bottom" secondItem="EfE-Rq-hVG" secondAttribute="bottom" id="uV4-hN-fhd"/>
                                     <constraint firstItem="5Kz-y6-Mmw" firstAttribute="leading" secondItem="s88-ob-hYh" secondAttribute="leading" id="w7Y-lN-xAT"/>
@@ -153,21 +168,27 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="WCw-Qf-5nD" customClass="PancakeHouseTableViewCell" customModule="StackReview" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="86" width="375" height="119"/>
+                                <rect key="frame" x="0.0" y="22" width="375" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <frame key="frameInset" width="342" height="118"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="118.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QOD-XB-gr5">
+                                            <rect key="frame" x="10" y="11" width="321" height="98.5"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="placeholder_thumb" translatesAutoresizingMaskIntoConstraints="NO" id="tgf-tC-NXJ"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="placeholder_thumb" translatesAutoresizingMaskIntoConstraints="NO" id="tgf-tC-NXJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="98.5"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pancake House Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydO-cY-Ej2">
+                                                    <rect key="frame" x="-10" y="49" width="0.0" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="pancake_rate_5_small" translatesAutoresizingMaskIntoConstraints="NO" id="gmY-u8-ufm"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="pancake_rate_5_small" translatesAutoresizingMaskIntoConstraints="NO" id="gmY-u8-ufm">
+                                                    <rect key="frame" x="-10" y="24" width="0.0" height="50"/>
+                                                </imageView>
                                             </subviews>
                                         </stackView>
                                     </subviews>
@@ -218,22 +239,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kbq-Yg-4Mm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="283"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yFz-t7-wrB">
+                                        <rect key="frame" x="35" y="0.0" width="305" height="283"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="O5b-iR-JAV">
+                                                <rect key="frame" x="0.0" y="0.0" width="305" height="253"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StackReview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb7-Bm-aki">
+                                                        <rect key="frame" x="0.0" y="0.0" width="305" height="72"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="60"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pancake_logo" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-5x-fqP"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pancake_logo" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-5x-fqP">
+                                                        <rect key="frame" x="27.5" y="72" width="250" height="181"/>
+                                                    </imageView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SZe-qt-PcB">
+                                                <rect key="frame" x="55.5" y="253" width="194" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjY-WN-ljR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="194" height="30"/>
                                                         <state key="normal" title="Show/Hide Copyright Notice"/>
                                                         <connections>
                                                             <action selector="handleShowHideTapped:" destination="M4M-oT-X8b" eventType="touchUpInside" id="VS0-X5-XDD"/>
@@ -283,13 +312,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="6KM-hS-RTP"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="6KM-hS-RTP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="267"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Ready for Pancakes?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0D9-qP-7Lh" customClass="MultilineLabelThatWorks" customModule="StackReview" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="331" width="375" height="47.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" red="0.52535939220000005" green="0.51400119070000005" blue="0.30811551209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Select a pancake house!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="erY-yv-Ej1" customClass="MultilineLabelThatWorks" customModule="StackReview" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="386.5" width="375" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -320,6 +353,7 @@
             <objects>
                 <navigationController id="vC3-pB-5Vb" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.11434481292963028" green="0.57618016004562378" blue="0.75002843141555786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="1" green="0.77599471245042106" blue="0.2618758663386479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -340,6 +374,7 @@
             <objects>
                 <navigationController id="aFm-hw-aKa" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="47N-hI-sl1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.1143448129" green="0.57618016000000005" blue="0.75002843139999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="1" green="0.77599471249999996" blue="0.26187586629999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

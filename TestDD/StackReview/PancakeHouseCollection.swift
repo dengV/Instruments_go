@@ -1,26 +1,8 @@
-/**
- * Copyright (c) 2016 Razeware LLC
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
 
 import Foundation
+
+// Heart of the project. 数据层， 模型， 以及 数据 的 管理。
+
 
 public class PancakeHouseCollection {
   
@@ -53,7 +35,9 @@ public class PancakeHouseCollection {
   /// Use this method to load the default pancake hosues from the `pancakes_houses` plist in the main bundle.
   public func loadDefaultPancakeHouses() {
     loadPancakeHouses("pancake_houses", in: Bundle.main)
-  }
+  }// plist 文件
+    
+    
   
   /// Use this method to load the pancake houses from the plist name in the given bundle.
   ///
@@ -65,7 +49,9 @@ public class PancakeHouseCollection {
     _pancakeHouses = PancakeHouse.from(array)
   }
   
-  /// Use this method to load pancakes from the cloud.
+    
+    
+  /// Use this method to load pancakes from the cloud. 云端的
   ///
   /// This method returns immediately and calls the completion handler when finished, with a Boolean parameter on whether data was loaded or not.
   ///
@@ -112,6 +98,9 @@ public class PancakeHouseCollection {
     return currentFavorite == pancakeHouse
   }
   
+    
+    
+    
   /// Use this method to add a new pancake house to the collection
   ///
   /// - parameter pancakeHouse: The pancake house to be added
@@ -119,6 +108,11 @@ public class PancakeHouseCollection {
     _pancakeHouses.append(pancakeHouse)
   }
   
+    
+    
+    
+    
+    
   /// @brief  Use this method to remove a pancake house from the collection.
   ///
   /// @discussion  If the pancake house isn't part of the collection, throws `PancakseHouseError.triedToRemoveUnknownPancakeHouse` error.
