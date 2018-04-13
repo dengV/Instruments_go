@@ -23,6 +23,7 @@
 		23365253207C9D9300D63CAC /* PancakeHouseCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23365252207C9D9300D63CAC /* PancakeHouseCollectionTests.swift */; };
 		23365255207CA18D00D63CAC /* test_pancake_houses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23365254207CA18D00D63CAC /* test_pancake_houses.plist */; };
 		23365257207CA41900D63CAC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23365256207CA41900D63CAC /* Info.plist */; };
+		2368E7E82080A06400EC6435 /* PancakeHouseCollectionChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2368E7E72080A06400EC6435 /* PancakeHouseCollectionChallenge.swift */; };
 		420902461D939859004DAD49 /* PriceGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420902451D939859004DAD49 /* PriceGuide.swift */; };
 		420902481D9398CB004DAD49 /* PancakeRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420902471D9398CB004DAD49 /* PancakeRating.swift */; };
 		4209024D1D93B398004DAD49 /* BaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209024C1D93B398004DAD49 /* BaseDetailViewController.swift */; };
@@ -62,6 +63,7 @@
 		23365252207C9D9300D63CAC /* PancakeHouseCollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PancakeHouseCollectionTests.swift; sourceTree = "<group>"; };
 		23365254207CA18D00D63CAC /* test_pancake_houses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = test_pancake_houses.plist; path = Resources/test_pancake_houses.plist; sourceTree = SOURCE_ROOT; };
 		23365256207CA41900D63CAC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2368E7E72080A06400EC6435 /* PancakeHouseCollectionChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PancakeHouseCollectionChallenge.swift; sourceTree = "<group>"; };
 		420902451D939859004DAD49 /* PriceGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceGuide.swift; sourceTree = "<group>"; };
 		420902471D9398CB004DAD49 /* PancakeRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeRating.swift; sourceTree = "<group>"; };
 		4209024C1D93B398004DAD49 /* BaseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDetailViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				23365252207C9D9300D63CAC /* PancakeHouseCollectionTests.swift */,
+				2368E7E72080A06400EC6435 /* PancakeHouseCollectionChallenge.swift */,
 			);
 			path = Case;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2368E7E82080A06400EC6435 /* PancakeHouseCollectionChallenge.swift in Sources */,
 				23365253207C9D9300D63CAC /* PancakeHouseCollectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
