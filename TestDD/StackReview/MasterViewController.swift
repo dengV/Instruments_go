@@ -2,6 +2,9 @@
 
 import UIKit
 
+
+// Root 的 split 中的 master 
+
 public class MasterViewController: UITableViewController {
   
   // MARK: - Instance Properties

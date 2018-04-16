@@ -56,6 +56,9 @@ public class PancakeHouseCollection {
   /// This method returns immediately and calls the completion handler when finished, with a Boolean parameter on whether data was loaded or not.
   ///
   /// @warning  Cloud login hasn't been implemented! The backend engineers on still working on the SSO/TTL/RFLOL codez...
+    //  TTL （生存时间值）,  Time To Live
+    //
+    
   ///
   /// - parameter completion: The completion handler to be called after loading
   public func loadPancakesFromCloud(completion: ((Bool) -> ())?) {

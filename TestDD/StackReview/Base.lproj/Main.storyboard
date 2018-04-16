@@ -327,6 +327,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="静态页，很固定的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bY9-Id-L7E">
+                                <rect key="frame" x="70" y="483" width="235" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -336,6 +342,8 @@
                             <constraint firstAttribute="trailing" secondItem="6KM-hS-RTP" secondAttribute="trailing" id="G6l-tY-VvE"/>
                             <constraint firstItem="0D9-qP-7Lh" firstAttribute="top" secondItem="6KM-hS-RTP" secondAttribute="bottom" id="ZcB-al-4VI"/>
                             <constraint firstItem="erY-yv-Ej1" firstAttribute="top" secondItem="0D9-qP-7Lh" secondAttribute="bottom" constant="8" id="aNY-5G-Xsm"/>
+                            <constraint firstItem="bY9-Id-L7E" firstAttribute="centerY" secondItem="EdZ-mV-1fN" secondAttribute="centerY" multiplier="1.5" id="aP3-E0-fsy"/>
+                            <constraint firstItem="bY9-Id-L7E" firstAttribute="centerX" secondItem="EdZ-mV-1fN" secondAttribute="centerX" id="fEL-qI-nYL"/>
                             <constraint firstItem="0D9-qP-7Lh" firstAttribute="leading" secondItem="EdZ-mV-1fN" secondAttribute="leading" id="hiu-86-8kd"/>
                             <constraint firstItem="6KM-hS-RTP" firstAttribute="top" secondItem="SLH-Rt-Qa7" secondAttribute="bottom" id="jmh-He-OO8"/>
                             <constraint firstItem="erY-yv-Ej1" firstAttribute="leading" secondItem="EdZ-mV-1fN" secondAttribute="leading" id="nOc-S4-t6y"/>
