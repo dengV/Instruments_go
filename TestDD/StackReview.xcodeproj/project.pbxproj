@@ -23,8 +23,10 @@
 		23365253207C9D9300D63CAC /* PancakeHouseCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23365252207C9D9300D63CAC /* PancakeHouseCollectionTests.swift */; };
 		23365255207CA18D00D63CAC /* test_pancake_houses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23365254207CA18D00D63CAC /* test_pancake_houses.plist */; };
 		2368E7E82080A06400EC6435 /* PancakeHouseCollectionChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2368E7E72080A06400EC6435 /* PancakeHouseCollectionChallenge.swift */; };
+		2387AC7B2085F44A00AC93BE /* test_pancake_houses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23365254207CA18D00D63CAC /* test_pancake_houses.plist */; };
 		23CE42792085015C0038247A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23CE42782085015C0038247A /* Info.plist */; };
 		23CE427B208501720038247A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23CE427A208501720038247A /* Info.plist */; };
+		23CE429320850ADC0038247A /* PancakeHouseCollectionIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE429220850ADC0038247A /* PancakeHouseCollectionIntegrationTests.swift */; };
 		420902461D939859004DAD49 /* PriceGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420902451D939859004DAD49 /* PriceGuide.swift */; };
 		420902481D9398CB004DAD49 /* PancakeRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420902471D9398CB004DAD49 /* PancakeRating.swift */; };
 		4209024D1D93B398004DAD49 /* BaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209024C1D93B398004DAD49 /* BaseDetailViewController.swift */; };
@@ -74,6 +76,7 @@
 		23CE426C208500AC0038247A /* StackReviewIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackReviewIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CE42782085015C0038247A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23CE427A208501720038247A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23CE429220850ADC0038247A /* PancakeHouseCollectionIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PancakeHouseCollectionIntegrationTests.swift; sourceTree = "<group>"; };
 		420902451D939859004DAD49 /* PriceGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceGuide.swift; sourceTree = "<group>"; };
 		420902471D9398CB004DAD49 /* PancakeRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeRating.swift; sourceTree = "<group>"; };
 		4209024C1D93B398004DAD49 /* BaseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDetailViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +236,7 @@
 		23CE42762085015C0038247A /* Cases */ = {
 			isa = PBXGroup;
 			children = (
+				23CE429220850ADC0038247A /* PancakeHouseCollectionIntegrationTests.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -360,6 +364,7 @@
 					23CE426B208500AC0038247A = {
 						CreatedOnToolsVersion = 9.1;
 						DevelopmentTeam = 9ZPF2ERCW9;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 22A7E5691B3AE0E600F269A3;
 					};
@@ -412,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23CE42792085015C0038247A /* Info.plist in Resources */,
+				2387AC7B2085F44A00AC93BE /* test_pancake_houses.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23CE429320850ADC0038247A /* PancakeHouseCollectionIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +683,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -688,6 +696,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dengjiangzhou.StackReviewIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackReview.app/StackReview";
@@ -701,6 +710,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
