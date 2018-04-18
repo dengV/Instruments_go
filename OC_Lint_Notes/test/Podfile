@@ -1,0 +1,22 @@
+platform:ios,’9.0’
+inhibit_all_warnings!
+
+target “ZTOBestSeller” do 
+pod 'AFNetworking', '~> 3.1.0'
+pod 'YYModel’, '~> 1.0.4'
+pod 'YYCache', '~> 1.0.4'
+pod 'MBProgressHUD', '~> 1.0.0'
+pod 'MJRefresh', '3.1.12'
+pod 'Reachability', '~> 3.2'
+pod 'SDWebImage', '~> 3.8.2'
+pod 'Masonry', '~> 1.0.2'
+pod 'DZNEmptyDataSet', '~> 1.8.1'
+pod 'TZImagePickerController', '1.7.1'
+pod 'IQKeyboardManager', '~> 5.0.2'
+pod 'FMDB', '~> 2.7.2'
+end
+
+
+target 'ZTOBestSellerIntegratedTests' do
+    pod 'AFNetworking', '~> 3.1.0'
+end
