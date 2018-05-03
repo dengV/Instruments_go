@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		23B1842F209AABC10052F67E /* HalfTunesSlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1842E209AABC10052F67E /* HalfTunesSlowTests.swift */; };
 		23B1843D209AD1CF0052F67E /* HalfTunesFakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1843C209AD1CF0052F67E /* HalfTunesFakeTests.swift */; };
-		23B18446209AD4FB0052F67E /*  abbaData.json in Resources */ = {isa = PBXBuildFile; fileRef = 23B18445209AD4FB0052F67E /*  abbaData.json */; };
+		23B18446209AD4FB0052F67E /* abbaData.json in Resources */ = {isa = PBXBuildFile; fileRef = 23B18445209AD4FB0052F67E /* abbaData.json */; };
 		408976CF1DEBF79E00AAB652 /* DHURLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408976CE1DEBF79E00AAB652 /* DHURLSessionMock.swift */; };
 		4708D0071DD0E0E100B57EFC /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4708D0061DD0E0E100B57EFC /* Download.swift */; };
 		D9EF8FC71B53FD2100EFC4B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF8FC61B53FD2100EFC4B6 /* AppDelegate.swift */; };
@@ -45,7 +45,7 @@
 		23B1843A209AD1CF0052F67E /* HalfTunesFakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTunesFakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B1843C209AD1CF0052F67E /* HalfTunesFakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfTunesFakeTests.swift; sourceTree = "<group>"; };
 		23B1843E209AD1CF0052F67E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23B18445209AD4FB0052F67E /*  abbaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = " abbaData.json"; sourceTree = "<group>"; };
+		23B18445209AD4FB0052F67E /* abbaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = abbaData.json; sourceTree = "<group>"; };
 		408976CE1DEBF79E00AAB652 /* DHURLSessionMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHURLSessionMock.swift; sourceTree = "<group>"; };
 		4708D0061DD0E0E100B57EFC /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		D9EF8FC11B53FD2100EFC4B6 /* HalfTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalfTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +106,7 @@
 		23B18444209AD4FB0052F67E /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				23B18445209AD4FB0052F67E /*  abbaData.json */,
+				23B18445209AD4FB0052F67E /* abbaData.json */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B18446209AD4FB0052F67E /*  abbaData.json in Resources */,
+				23B18446209AD4FB0052F67E /* abbaData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

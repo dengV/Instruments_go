@@ -13,6 +13,10 @@ class SearchViewController: UIViewController {
   
   // create and initialize URLSession with a default session configuration
   var defaultSession: DHURLSession = URLSession(configuration: URLSessionConfiguration.default)
+    /*  extension URLSession: DHURLSession { }
+            这行代码 ， 用在这里
+   */
+    
     
     
   // declare a URLSessionDataTask which you'll use to make an HTTP GET request to the iTunes Seach web service
@@ -89,11 +93,15 @@ class SearchViewController: UIViewController {
     } catch let error as NSError {
       print("Error parsing results: \(error.localizedDescription)")
     }
-    
+    /*
     DispatchQueue.main.async {
       self.tableView.reloadData()
       self.tableView.setContentOffset(CGPoint.zero, animated: false)
     }
+     
+     我日啊， 测试的时候， 这里要注释，
+     否则， fatal error
+   */
   }
   
     
