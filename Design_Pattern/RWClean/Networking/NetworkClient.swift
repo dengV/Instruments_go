@@ -1,32 +1,4 @@
-/**
- * Copyright (c) 2017 Razeware LLC
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
- * distribute, sublicense, create a derivative work, and/or sell copies of the
- * Software in any work that is designed, intended, or marketed for pedagogical or
- * instructional purposes related to programming, coding, application development,
- * or information technology.  Permission for such use, copying, modification,
- * merger, publication, distribution, sublicensing, creation of derivative works,
- * or sale is expressly withheld.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
+ 
 
 import Foundation
 
@@ -36,6 +8,7 @@ public final class NetworkClient {
   internal let baseURL: URL
   internal let session = URLSession.shared
   
+    
   // MARK: - Class Constructors
   public static let shared: NetworkClient = {
     let file = Bundle.main.path(forResource: "ServerEnvironments", ofType: "plist")!
@@ -44,9 +17,113 @@ public final class NetworkClient {
     let url = URL(string: urlString)!
     return NetworkClient(baseURL: url)
   }()
+    
+    
   
   // MARK: - Object Lifecycle
   private init(baseURL: URL) {    
     self.baseURL = baseURL
-  }  
+  }
+    
+    
+    
+    
+    public func getProducts(forType type: Product.ProductType, success _success: @escaping ([Product]) -> Void, failure _failure: @escaping (NetworkError) -> Void){
+    
+        let success: ([Product]) -> Void = {    products in
+            DispatchQueue.main.async {
+                _success(products)
+            }
+        }
+        
+        let failure: (NetworkError) -> Void = {    error in
+            DispatchQueue.main.async {
+                _failure(error)
+            }
+        }
+    
+        let url = baseURL.appendingPathComponent("products/\(type.rawValue)")
+    
+        /*
+         
+         This takes in a type , which is a product type.
+         
+         
+         And under the hood here ,
+         this is just simply an enum that we'll use to create
+         the desired Business or Home endpoints here.
+         
+         
+         
+         */
+        
+        let task = session.dataTask(with: url, completionHandler: { (data, response, error) in
+            guard let httpResponse = response as? HTTPURLResponse,
+                    httpResponse.statusCode.isSuccessHTTPCode ,
+                let data = data,
+                let jsonObject = try? JSONSerialization.jsonObject(with: data),
+                let json = jsonObject as? [[String: Any]]
+            else{
+                if let error = error {
+                    failure(NetworkError(error: error))
+                }
+                else{
+                    failure(NetworkError(response: response))
+                }
+                return
+                
+                
+/*
+                 If any of this is not true, we will call the failures.
+                 If there is a actually an error object,
+                 as part of this completion handler.
+                 
+                 
+                 
+                //       failure(NetworkError(error: error))
+                 If there is actually an error object , as part of this completion handler      ,   We will try to create a network error using it.
+                 
+                 
+                 Otherwise , we will use the response to create this network error.
+                 
+                 */
+                
+                
+                
+                
+            }
+            let products = Product.array(jsonArray: json)
+            success(products)
+        })
+        task.resume()
+        
+    }
+    
+    
+    
+    
+   
+    
 }
+ 
+ 
+ /*
+  public func getProducts(forType type: Product.ProductType, success _success: @escaping ([Product])) -> Void, failure _failure: @escaping (NetworkError) -> Void){
+  
+  
+  
+  
+  @escaping ([Product])) -> Void , 这 里多了 一个括号   “)”
+  */
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

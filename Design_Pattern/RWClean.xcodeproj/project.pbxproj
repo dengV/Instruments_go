@@ -22,35 +22,34 @@
 		2370D94E2087B18D0085FEB1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370D94D2087B18D0085FEB1 /* NetworkError.swift */; };
 		2370D95C2087B2330085FEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2370D9512087B2330085FEB1 /* Assets.xcassets */; };
 		2370D95D2087B2330085FEB1 /* ServerEnvironments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2370D9532087B2330085FEB1 /* ServerEnvironments.plist */; };
-		2370D95E2087B2330085FEB1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2370D9542087B2330085FEB1 /* Info.plist */; };
 		2370D95F2087B2330085FEB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370D9562087B2330085FEB1 /* AppDelegate.swift */; };
 		2370D9602087B2330085FEB1 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370D9582087B2330085FEB1 /* MenuTableViewController.swift */; };
 		2370D9612087B2330085FEB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2370D95A2087B2330085FEB1 /* LaunchScreen.storyboard */; };
 		2370D9622087B2330085FEB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2370D95B2087B2330085FEB1 /* Main.storyboard */; };
-		238A795C2083411100186108 /* CleaningServicesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238A795B2083411000186108 /* CleaningServicesBuilder.swift */; };
-		238A795E208342BF00186108 /* HomeInfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238A795D208342BF00186108 /* HomeInfoBuilder.swift */; };
-		421139E11E6BCB6D00A057BF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421139E01E6BCB6D00A057BF /* Product.swift */; };
-		421BD4271E68A3C6002F1F3C /* RoomCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BD4261E68A3C6002F1F3C /* RoomCountViewController.swift */; };
-		421BD4291E68A887002F1F3C /* RoomSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BD4281E68A887002F1F3C /* RoomSize.swift */; };
-		421BD42B1E68C98B002F1F3C /* ReviewHomeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421BD42A1E68C98B002F1F3C /* ReviewHomeInfoViewController.swift */; };
-		422FEA811E6767B000AFDC41 /* HomeInfoBuilder.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422FEA801E6767B000AFDC41 /* HomeInfoBuilder.xcassets */; };
-		422FEA831E6767EB00AFDC41 /* BedroomCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA821E6767EB00AFDC41 /* BedroomCountViewController.swift */; };
-		422FEA851E67683500AFDC41 /* HomeInfoBuilder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422FEA841E67683500AFDC41 /* HomeInfoBuilder.storyboard */; };
-		422FEA881E67687100AFDC41 /* HomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA871E67687100AFDC41 /* HomeInfo.swift */; };
-		422FEA8C1E676B4D00AFDC41 /* BathroomCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA8B1E676B4D00AFDC41 /* BathroomCountViewController.swift */; };
-		422FEA8E1E676B6200AFDC41 /* KitchenSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA8D1E676B6200AFDC41 /* KitchenSizeViewController.swift */; };
-		422FEA901E676B6D00AFDC41 /* OtherRoomCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA8F1E676B6D00AFDC41 /* OtherRoomCountViewController.swift */; };
-		422FEA921E676B7500AFDC41 /* HomeSquareFootageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA911E676B7500AFDC41 /* HomeSquareFootageViewController.swift */; };
-		422FEA941E676BDD00AFDC41 /* HomeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA931E676BDD00AFDC41 /* HomeInfoViewController.swift */; };
-		4276FCB31EB3E1DE004E96B9 /* StartHomeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4276FCB21EB3E1DE004E96B9 /* StartHomeInfoViewController.swift */; };
-		4287669F1E693415001D72E5 /* CleaningServices.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4287669E1E693415001D72E5 /* CleaningServices.xcassets */; };
-		428766A41E69344E001D72E5 /* CleaningServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428766A31E69344E001D72E5 /* CleaningServicesTableViewController.swift */; };
-		428766A61E6934C9001D72E5 /* CleaningServices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428766A51E6934C9001D72E5 /* CleaningServices.storyboard */; };
-		42F162C01E6C382C00B90E22 /* CollectionViewCenterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F162BF1E6C382C00B90E22 /* CollectionViewCenterFlowLayout.swift */; };
-		42F164E11E6C55C200B90E22 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F164E01E6C55C200B90E22 /* ProductDetailsViewController.swift */; };
-		42F84AB61E6950280029C1E6 /* HomeProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F84AB51E6950280029C1E6 /* HomeProductsViewController.swift */; };
-		42F84AB81E6950350029C1E6 /* BusinessProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F84AB71E6950350029C1E6 /* BusinessProductsViewController.swift */; };
-		42F84ABF1E6953120029C1E6 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F84ABE1E6953120029C1E6 /* ProductCollectionViewCell.swift */; };
+		23FC5CDB2090EB2100984A3B /* CleaningServicesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CCC2090EB2100984A3B /* CleaningServicesBuilder.swift */; };
+		23FC5CDC2090EB2100984A3B /* RoomSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CCE2090EB2100984A3B /* RoomSize.swift */; };
+		23FC5CDD2090EB2100984A3B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CCF2090EB2100984A3B /* Product.swift */; };
+		23FC5CDE2090EB2100984A3B /* CleaningServices.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FC5CD12090EB2100984A3B /* CleaningServices.xcassets */; };
+		23FC5CDF2090EB2100984A3B /* BusinessProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CD32090EB2100984A3B /* BusinessProductsViewController.swift */; };
+		23FC5CE02090EB2100984A3B /* CleaningServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CD42090EB2100984A3B /* CleaningServicesTableViewController.swift */; };
+		23FC5CE12090EB2100984A3B /* HomeProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CD52090EB2100984A3B /* HomeProductsViewController.swift */; };
+		23FC5CE22090EB2100984A3B /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CD62090EB2100984A3B /* ProductDetailsViewController.swift */; };
+		23FC5CE32090EB2100984A3B /* CleaningServices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FC5CD82090EB2100984A3B /* CleaningServices.storyboard */; };
+		23FC5CE42090EB2100984A3B /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CD92090EB2100984A3B /* ProductCollectionViewCell.swift */; };
+		23FC5CE52090EB2100984A3B /* CollectionViewCenterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CDA2090EB2100984A3B /* CollectionViewCenterFlowLayout.swift */; };
+		23FC5CFA2090EC8D00984A3B /* HomeInfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CE72090EC8D00984A3B /* HomeInfoBuilder.swift */; };
+		23FC5CFB2090EC8D00984A3B /* HomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CE92090EC8D00984A3B /* HomeInfo.swift */; };
+		23FC5CFC2090EC8D00984A3B /* HomeInfoBuilder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FC5CEB2090EC8D00984A3B /* HomeInfoBuilder.storyboard */; };
+		23FC5CFD2090EC8D00984A3B /* HomeInfoBuilder.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FC5CED2090EC8D00984A3B /* HomeInfoBuilder.xcassets */; };
+		23FC5CFE2090EC8D00984A3B /* HomeSquareFootageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CEF2090EC8D00984A3B /* HomeSquareFootageViewController.swift */; };
+		23FC5CFF2090EC8D00984A3B /* RoomCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CF12090EC8D00984A3B /* RoomCountViewController.swift */; };
+		23FC5D002090EC8D00984A3B /* BathroomCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CF22090EC8D00984A3B /* BathroomCountViewController.swift */; };
+		23FC5D012090EC8D00984A3B /* BedroomCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CF32090EC8D00984A3B /* BedroomCountViewController.swift */; };
+		23FC5D022090EC8D00984A3B /* OtherRoomCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CF42090EC8D00984A3B /* OtherRoomCountViewController.swift */; };
+		23FC5D032090EC8D00984A3B /* ReviewHomeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CF52090EC8D00984A3B /* ReviewHomeInfoViewController.swift */; };
+		23FC5D042090EC8D00984A3B /* StartHomeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CF62090EC8D00984A3B /* StartHomeInfoViewController.swift */; };
+		23FC5D052090EC8D00984A3B /* KitchenSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CF72090EC8D00984A3B /* KitchenSizeViewController.swift */; };
+		23FC5D062090EC8D00984A3B /* HomeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CF92090EC8D00984A3B /* HomeInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,32 +73,32 @@
 		2370D9582087B2330085FEB1 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		2370D95A2087B2330085FEB1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2370D95B2087B2330085FEB1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		238A795B2083411000186108 /* CleaningServicesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningServicesBuilder.swift; sourceTree = "<group>"; };
-		238A795D208342BF00186108 /* HomeInfoBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInfoBuilder.swift; sourceTree = "<group>"; };
-		421139E01E6BCB6D00A057BF /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		421BD4261E68A3C6002F1F3C /* RoomCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCountViewController.swift; sourceTree = "<group>"; };
-		421BD4281E68A887002F1F3C /* RoomSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomSize.swift; sourceTree = "<group>"; };
-		421BD42A1E68C98B002F1F3C /* ReviewHomeInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewHomeInfoViewController.swift; sourceTree = "<group>"; };
+		23FC5CCC2090EB2100984A3B /* CleaningServicesBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningServicesBuilder.swift; sourceTree = "<group>"; };
+		23FC5CCE2090EB2100984A3B /* RoomSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomSize.swift; sourceTree = "<group>"; };
+		23FC5CCF2090EB2100984A3B /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		23FC5CD12090EB2100984A3B /* CleaningServices.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CleaningServices.xcassets; sourceTree = "<group>"; };
+		23FC5CD32090EB2100984A3B /* BusinessProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessProductsViewController.swift; sourceTree = "<group>"; };
+		23FC5CD42090EB2100984A3B /* CleaningServicesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningServicesTableViewController.swift; sourceTree = "<group>"; };
+		23FC5CD52090EB2100984A3B /* HomeProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProductsViewController.swift; sourceTree = "<group>"; };
+		23FC5CD62090EB2100984A3B /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		23FC5CD82090EB2100984A3B /* CleaningServices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CleaningServices.storyboard; sourceTree = "<group>"; };
+		23FC5CD92090EB2100984A3B /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		23FC5CDA2090EB2100984A3B /* CollectionViewCenterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCenterFlowLayout.swift; sourceTree = "<group>"; };
+		23FC5CE72090EC8D00984A3B /* HomeInfoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInfoBuilder.swift; sourceTree = "<group>"; };
+		23FC5CE92090EC8D00984A3B /* HomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInfo.swift; sourceTree = "<group>"; };
+		23FC5CEB2090EC8D00984A3B /* HomeInfoBuilder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeInfoBuilder.storyboard; sourceTree = "<group>"; };
+		23FC5CED2090EC8D00984A3B /* HomeInfoBuilder.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HomeInfoBuilder.xcassets; sourceTree = "<group>"; };
+		23FC5CEF2090EC8D00984A3B /* HomeSquareFootageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSquareFootageViewController.swift; sourceTree = "<group>"; };
+		23FC5CF12090EC8D00984A3B /* RoomCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCountViewController.swift; sourceTree = "<group>"; };
+		23FC5CF22090EC8D00984A3B /* BathroomCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomCountViewController.swift; sourceTree = "<group>"; };
+		23FC5CF32090EC8D00984A3B /* BedroomCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedroomCountViewController.swift; sourceTree = "<group>"; };
+		23FC5CF42090EC8D00984A3B /* OtherRoomCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherRoomCountViewController.swift; sourceTree = "<group>"; };
+		23FC5CF52090EC8D00984A3B /* ReviewHomeInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewHomeInfoViewController.swift; sourceTree = "<group>"; };
+		23FC5CF62090EC8D00984A3B /* StartHomeInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartHomeInfoViewController.swift; sourceTree = "<group>"; };
+		23FC5CF72090EC8D00984A3B /* KitchenSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KitchenSizeViewController.swift; sourceTree = "<group>"; };
+		23FC5CF92090EC8D00984A3B /* HomeInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInfoViewController.swift; sourceTree = "<group>"; };
 		42208B841E6DACA500161D99 /* Image_Attributions.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Image_Attributions.md; sourceTree = SOURCE_ROOT; };
 		422FEA591E675E8800AFDC41 /* RWClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		422FEA801E6767B000AFDC41 /* HomeInfoBuilder.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HomeInfoBuilder.xcassets; sourceTree = "<group>"; };
-		422FEA821E6767EB00AFDC41 /* BedroomCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedroomCountViewController.swift; sourceTree = "<group>"; };
-		422FEA841E67683500AFDC41 /* HomeInfoBuilder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeInfoBuilder.storyboard; sourceTree = "<group>"; };
-		422FEA871E67687100AFDC41 /* HomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInfo.swift; sourceTree = "<group>"; };
-		422FEA8B1E676B4D00AFDC41 /* BathroomCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomCountViewController.swift; sourceTree = "<group>"; };
-		422FEA8D1E676B6200AFDC41 /* KitchenSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KitchenSizeViewController.swift; sourceTree = "<group>"; };
-		422FEA8F1E676B6D00AFDC41 /* OtherRoomCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherRoomCountViewController.swift; sourceTree = "<group>"; };
-		422FEA911E676B7500AFDC41 /* HomeSquareFootageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSquareFootageViewController.swift; sourceTree = "<group>"; };
-		422FEA931E676BDD00AFDC41 /* HomeInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInfoViewController.swift; sourceTree = "<group>"; };
-		4276FCB21EB3E1DE004E96B9 /* StartHomeInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartHomeInfoViewController.swift; sourceTree = "<group>"; };
-		4287669E1E693415001D72E5 /* CleaningServices.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CleaningServices.xcassets; sourceTree = "<group>"; };
-		428766A31E69344E001D72E5 /* CleaningServicesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningServicesTableViewController.swift; sourceTree = "<group>"; };
-		428766A51E6934C9001D72E5 /* CleaningServices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CleaningServices.storyboard; sourceTree = "<group>"; };
-		42F162BF1E6C382C00B90E22 /* CollectionViewCenterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCenterFlowLayout.swift; sourceTree = "<group>"; };
-		42F164E01E6C55C200B90E22 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
-		42F84AB51E6950280029C1E6 /* HomeProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProductsViewController.swift; sourceTree = "<group>"; };
-		42F84AB71E6950350029C1E6 /* BusinessProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessProductsViewController.swift; sourceTree = "<group>"; };
-		42F84ABE1E6953120029C1E6 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,87 +240,122 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		238A794F208337CE00186108 /* Clearning Services */ = {
+		23FC5CCB2090EB2100984A3B /* Clearning Services */ = {
 			isa = PBXGroup;
 			children = (
-				238A7958208339B600186108 /* Views */,
-				238A79552083391500186108 /* Resource */,
-				238A7953208338B700186108 /* Models */,
-				42C0F5D21EB7AE8800C6EBAB /* Controllers */,
-				238A795B2083411000186108 /* CleaningServicesBuilder.swift */,
+				23FC5CCC2090EB2100984A3B /* CleaningServicesBuilder.swift */,
+				23FC5CCD2090EB2100984A3B /* Models */,
+				23FC5CD02090EB2100984A3B /* Resource */,
+				23FC5CD22090EB2100984A3B /* Controllers */,
+				23FC5CD72090EB2100984A3B /* Views */,
 			);
-			name = "Clearning Services";
+			path = "Clearning Services";
 			sourceTree = "<group>";
 		};
-		238A7950208337E200186108 /* Home Info */ = {
+		23FC5CCD2090EB2100984A3B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				238A7959208339D200186108 /* View */,
-				238A79562083392700186108 /* Resource */,
-				238A7954208338C800186108 /* Model */,
-				42F860161E6F20E50078A995 /* Controllers */,
-				238A795D208342BF00186108 /* HomeInfoBuilder.swift */,
+				23FC5CCE2090EB2100984A3B /* RoomSize.swift */,
+				23FC5CCF2090EB2100984A3B /* Product.swift */,
 			);
-			name = "Home Info";
+			path = Models;
 			sourceTree = "<group>";
 		};
-		238A7953208338B700186108 /* Models */ = {
+		23FC5CD02090EB2100984A3B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				421139E01E6BCB6D00A057BF /* Product.swift */,
-				421BD4281E68A887002F1F3C /* RoomSize.swift */,
+				23FC5CD12090EB2100984A3B /* CleaningServices.xcassets */,
 			);
-			name = Models;
+			path = Resource;
 			sourceTree = "<group>";
 		};
-		238A7954208338C800186108 /* Model */ = {
+		23FC5CD22090EB2100984A3B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				422FEA871E67687100AFDC41 /* HomeInfo.swift */,
+				23FC5CD32090EB2100984A3B /* BusinessProductsViewController.swift */,
+				23FC5CD42090EB2100984A3B /* CleaningServicesTableViewController.swift */,
+				23FC5CD52090EB2100984A3B /* HomeProductsViewController.swift */,
+				23FC5CD62090EB2100984A3B /* ProductDetailsViewController.swift */,
 			);
-			name = Model;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		238A79552083391500186108 /* Resource */ = {
+		23FC5CD72090EB2100984A3B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4287669E1E693415001D72E5 /* CleaningServices.xcassets */,
+				23FC5CD82090EB2100984A3B /* CleaningServices.storyboard */,
+				23FC5CD92090EB2100984A3B /* ProductCollectionViewCell.swift */,
+				23FC5CDA2090EB2100984A3B /* CollectionViewCenterFlowLayout.swift */,
 			);
-			name = Resource;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		238A79562083392700186108 /* Resource */ = {
+		23FC5CE62090EC8D00984A3B /* Home Info */ = {
 			isa = PBXGroup;
 			children = (
-				422FEA801E6767B000AFDC41 /* HomeInfoBuilder.xcassets */,
+				23FC5CE72090EC8D00984A3B /* HomeInfoBuilder.swift */,
+				23FC5CE82090EC8D00984A3B /* Model */,
+				23FC5CEA2090EC8D00984A3B /* View */,
+				23FC5CEC2090EC8D00984A3B /* Resource */,
+				23FC5CEE2090EC8D00984A3B /* Controllers */,
 			);
-			name = Resource;
+			path = "Home Info";
 			sourceTree = "<group>";
 		};
-		238A7958208339B600186108 /* Views */ = {
+		23FC5CE82090EC8D00984A3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				428766A51E6934C9001D72E5 /* CleaningServices.storyboard */,
-				42F162BF1E6C382C00B90E22 /* CollectionViewCenterFlowLayout.swift */,
-				42F84ABE1E6953120029C1E6 /* ProductCollectionViewCell.swift */,
+				23FC5CE92090EC8D00984A3B /* HomeInfo.swift */,
 			);
-			name = Views;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		238A7959208339D200186108 /* View */ = {
+		23FC5CEA2090EC8D00984A3B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				422FEA841E67683500AFDC41 /* HomeInfoBuilder.storyboard */,
+				23FC5CEB2090EC8D00984A3B /* HomeInfoBuilder.storyboard */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
-		421BD4251E68A3A8002F1F3C /* Base */ = {
+		23FC5CEC2090EC8D00984A3B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				422FEA931E676BDD00AFDC41 /* HomeInfoViewController.swift */,
+				23FC5CED2090EC8D00984A3B /* HomeInfoBuilder.xcassets */,
 			);
-			name = Base;
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		23FC5CEE2090EC8D00984A3B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				23FC5CEF2090EC8D00984A3B /* HomeSquareFootageViewController.swift */,
+				23FC5CF02090EC8D00984A3B /* RoomCountViewControllers */,
+				23FC5CF52090EC8D00984A3B /* ReviewHomeInfoViewController.swift */,
+				23FC5CF62090EC8D00984A3B /* StartHomeInfoViewController.swift */,
+				23FC5CF72090EC8D00984A3B /* KitchenSizeViewController.swift */,
+				23FC5CF82090EC8D00984A3B /* Base */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		23FC5CF02090EC8D00984A3B /* RoomCountViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				23FC5CF12090EC8D00984A3B /* RoomCountViewController.swift */,
+				23FC5CF22090EC8D00984A3B /* BathroomCountViewController.swift */,
+				23FC5CF32090EC8D00984A3B /* BedroomCountViewController.swift */,
+				23FC5CF42090EC8D00984A3B /* OtherRoomCountViewController.swift */,
+			);
+			path = RoomCountViewControllers;
+			sourceTree = "<group>";
+		};
+		23FC5CF82090EC8D00984A3B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				23FC5CF92090EC8D00984A3B /* HomeInfoViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		422FEA501E675E8800AFDC41 = {
@@ -344,49 +378,14 @@
 		422FEA5B1E675E8800AFDC41 /* RWClean */ = {
 			isa = PBXGroup;
 			children = (
+				23FC5CE62090EC8D00984A3B /* Home Info */,
+				23FC5CCB2090EB2100984A3B /* Clearning Services */,
 				2370D94F2087B2330085FEB1 /* App */,
 				2370D9392087B04D0085FEB1 /* Welcome */,
 				2370D92D2087AFAF0085FEB1 /* Theme */,
-				238A794F208337CE00186108 /* Clearning Services */,
-				238A7950208337E200186108 /* Home Info */,
 				2370D9382087AFBD0085FEB1 /* Networking */,
 			);
 			path = RWClean;
-			sourceTree = "<group>";
-		};
-		4276FCB01EB3E196004E96B9 /* RoomCountViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				421BD4261E68A3C6002F1F3C /* RoomCountViewController.swift */,
-				422FEA8B1E676B4D00AFDC41 /* BathroomCountViewController.swift */,
-				422FEA821E6767EB00AFDC41 /* BedroomCountViewController.swift */,
-				422FEA8F1E676B6D00AFDC41 /* OtherRoomCountViewController.swift */,
-			);
-			name = RoomCountViewControllers;
-			sourceTree = "<group>";
-		};
-		42C0F5D21EB7AE8800C6EBAB /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				42F84AB71E6950350029C1E6 /* BusinessProductsViewController.swift */,
-				428766A31E69344E001D72E5 /* CleaningServicesTableViewController.swift */,
-				42F84AB51E6950280029C1E6 /* HomeProductsViewController.swift */,
-				42F164E01E6C55C200B90E22 /* ProductDetailsViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		42F860161E6F20E50078A995 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				421BD4251E68A3A8002F1F3C /* Base */,
-				4276FCB01EB3E196004E96B9 /* RoomCountViewControllers */,
-				422FEA911E676B7500AFDC41 /* HomeSquareFootageViewController.swift */,
-				422FEA8D1E676B6200AFDC41 /* KitchenSizeViewController.swift */,
-				421BD42A1E68C98B002F1F3C /* ReviewHomeInfoViewController.swift */,
-				4276FCB21EB3E1DE004E96B9 /* StartHomeInfoViewController.swift */,
-			);
-			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,18 +448,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FC5CDE2090EB2100984A3B /* CleaningServices.xcassets in Resources */,
+				23FC5CFC2090EC8D00984A3B /* HomeInfoBuilder.storyboard in Resources */,
 				2370D9352087AFAF0085FEB1 /* LoadingHUD.xib in Resources */,
-				4287669F1E693415001D72E5 /* CleaningServices.xcassets in Resources */,
-				422FEA851E67683500AFDC41 /* HomeInfoBuilder.storyboard in Resources */,
 				2370D9622087B2330085FEB1 /* Main.storyboard in Resources */,
-				422FEA811E6767B000AFDC41 /* HomeInfoBuilder.xcassets in Resources */,
 				2370D9412087B04D0085FEB1 /* Welcome.storyboard in Resources */,
 				2370D9422087B04D0085FEB1 /* Welcome.xcassets in Resources */,
 				2370D95C2087B2330085FEB1 /* Assets.xcassets in Resources */,
 				2370D95D2087B2330085FEB1 /* ServerEnvironments.plist in Resources */,
-				2370D95E2087B2330085FEB1 /* Info.plist in Resources */,
+				23FC5CFD2090EC8D00984A3B /* HomeInfoBuilder.xcassets in Resources */,
+				23FC5CE32090EB2100984A3B /* CleaningServices.storyboard in Resources */,
 				2370D9612087B2330085FEB1 /* LaunchScreen.storyboard in Resources */,
-				428766A61E6934C9001D72E5 /* CleaningServices.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,38 +469,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FC5CFB2090EC8D00984A3B /* HomeInfo.swift in Sources */,
 				2370D9432087B04D0085FEB1 /* WelcomeViewController.swift in Sources */,
 				2370D94E2087B18D0085FEB1 /* NetworkError.swift in Sources */,
 				2370D9362087AFAF0085FEB1 /* ParentPushSegue.swift in Sources */,
-				422FEA8C1E676B4D00AFDC41 /* BathroomCountViewController.swift in Sources */,
+				23FC5D002090EC8D00984A3B /* BathroomCountViewController.swift in Sources */,
+				23FC5CE22090EB2100984A3B /* ProductDetailsViewController.swift in Sources */,
+				23FC5CFA2090EC8D00984A3B /* HomeInfoBuilder.swift in Sources */,
+				23FC5D032090EC8D00984A3B /* ReviewHomeInfoViewController.swift in Sources */,
+				23FC5D052090EC8D00984A3B /* KitchenSizeViewController.swift in Sources */,
+				23FC5CE42090EB2100984A3B /* ProductCollectionViewCell.swift in Sources */,
+				23FC5D012090EC8D00984A3B /* BedroomCountViewController.swift in Sources */,
+				23FC5D062090EC8D00984A3B /* HomeInfoViewController.swift in Sources */,
 				2370D9342087AFAF0085FEB1 /* UIViewController+LoadingHUD.swift in Sources */,
-				428766A41E69344E001D72E5 /* CleaningServicesTableViewController.swift in Sources */,
 				2370D94C2087B1860085FEB1 /* Int+HTTPStatusCode.swift in Sources */,
-				238A795E208342BF00186108 /* HomeInfoBuilder.swift in Sources */,
-				421BD42B1E68C98B002F1F3C /* ReviewHomeInfoViewController.swift in Sources */,
-				42F164E11E6C55C200B90E22 /* ProductDetailsViewController.swift in Sources */,
+				23FC5D042090EC8D00984A3B /* StartHomeInfoViewController.swift in Sources */,
 				2370D9332087AFAF0085FEB1 /* SetNavigationRootSegue.swift in Sources */,
-				422FEA921E676B7500AFDC41 /* HomeSquareFootageViewController.swift in Sources */,
-				42F84AB61E6950280029C1E6 /* HomeProductsViewController.swift in Sources */,
+				23FC5CFF2090EC8D00984A3B /* RoomCountViewController.swift in Sources */,
 				2370D9372087AFAF0085FEB1 /* LoadingHUD.swift in Sources */,
-				42F84ABF1E6953120029C1E6 /* ProductCollectionViewCell.swift in Sources */,
-				238A795C2083411100186108 /* CleaningServicesBuilder.swift in Sources */,
-				422FEA8E1E676B6200AFDC41 /* KitchenSizeViewController.swift in Sources */,
-				42F162C01E6C382C00B90E22 /* CollectionViewCenterFlowLayout.swift in Sources */,
-				422FEA881E67687100AFDC41 /* HomeInfo.swift in Sources */,
-				422FEA941E676BDD00AFDC41 /* HomeInfoViewController.swift in Sources */,
+				23FC5CE52090EB2100984A3B /* CollectionViewCenterFlowLayout.swift in Sources */,
 				2370D9602087B2330085FEB1 /* MenuTableViewController.swift in Sources */,
 				2370D94B2087B1860085FEB1 /* UIImageView+URL.swift in Sources */,
-				421BD4291E68A887002F1F3C /* RoomSize.swift in Sources */,
+				23FC5CFE2090EC8D00984A3B /* HomeSquareFootageViewController.swift in Sources */,
 				2370D95F2087B2330085FEB1 /* AppDelegate.swift in Sources */,
-				4276FCB31EB3E1DE004E96B9 /* StartHomeInfoViewController.swift in Sources */,
 				2370D9442087B04D0085FEB1 /* WelcomePageViewController.swift in Sources */,
-				421BD4271E68A3C6002F1F3C /* RoomCountViewController.swift in Sources */,
-				422FEA831E6767EB00AFDC41 /* BedroomCountViewController.swift in Sources */,
-				42F84AB81E6950350029C1E6 /* BusinessProductsViewController.swift in Sources */,
+				23FC5CE02090EB2100984A3B /* CleaningServicesTableViewController.swift in Sources */,
+				23FC5CDB2090EB2100984A3B /* CleaningServicesBuilder.swift in Sources */,
+				23FC5CDF2090EB2100984A3B /* BusinessProductsViewController.swift in Sources */,
+				23FC5CE12090EB2100984A3B /* HomeProductsViewController.swift in Sources */,
+				23FC5D022090EC8D00984A3B /* OtherRoomCountViewController.swift in Sources */,
 				2370D9482087B17D0085FEB1 /* NetworkClient.swift in Sources */,
-				422FEA901E676B6D00AFDC41 /* OtherRoomCountViewController.swift in Sources */,
-				421139E11E6BCB6D00A057BF /* Product.swift in Sources */,
+				23FC5CDC2090EB2100984A3B /* RoomSize.swift in Sources */,
+				23FC5CDD2090EB2100984A3B /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

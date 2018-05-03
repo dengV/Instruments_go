@@ -181,11 +181,13 @@ It will do all the drilling for u.
 
 
 <hr>
+<hr>
 
+> Note: The Given-When-Then structure of a test originated with Behavior Driven Development (BDD) as a client-friendly, low-jargon nomenclature. Alternative naming systems are Arrange-Act-Assert and Assemble-Activate-Assert.
 
 
 <hr>
-
+<hr>
 
 ### git 操作：
 

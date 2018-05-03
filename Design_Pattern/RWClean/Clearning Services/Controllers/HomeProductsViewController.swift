@@ -1,8 +1,16 @@
  
-
+//  Home    Products    ViewController
+ 
+ 
 import UIKit
 
-public class BusinessProductsViewController: UIViewController {
+public class HomeProductsViewController: UIViewController {
+    
+    
+    // MARK: - Injections
+    
+    internal var networkClient = NetworkClient.shared       //  First we get the network client shared instance.
+    
   
   // MARK: - Instance Properties
   internal var imageTasks: [IndexPath: URLSessionDataTask] = [:]
@@ -22,41 +30,26 @@ public class BusinessProductsViewController: UIViewController {
     }
   }
   
-  internal func loadProducts() {
-    collectionView.refreshControl?.beginRefreshing()
-    let url = URL(string: "https://rwcleanbackend.herokuapp.com/products/business")!
-    let task = session.dataTask(with: url, completionHandler: { (data, response, error) in
-      if let error = error {
-        print("Product download failed: \(error)")
-        return
-      }
-      guard let data = data else {
-        print("Product download failed: data is nil!")
-        return
-      }
-      let jsonArray: [[String: Any]]
-      do {
-        guard let jsonObject = try JSONSerialization.jsonObject(with: data) as? [[String: Any]] else {
-          print("Product download failed: invalid JSON")
-          return
-        }
-        jsonArray = jsonObject
+    
+    
+    internal func loadProducts() {
+        collectionView.refreshControl?.beginRefreshing()
         
-      } catch {
-        print("Product download failed: invalid JSON")
-        return
-      }
-      let products = Product.array(jsonArray: jsonArray)
-      DispatchQueue.main.async { [weak self] in
-        guard let strongSelf = self else { return }
-        strongSelf.products = products
-        strongSelf.collectionView.refreshControl?.endRefreshing()
-        strongSelf.collectionView.reloadData()
-      }
-    })
-    task.resume()
-  }
-  
+        networkClient.getProducts(forType:.home, success: { [weak self] products in
+            guard let strongSelf = self else { return }
+            strongSelf.products = products
+            strongSelf.collectionView.refreshControl?.endRefreshing()
+            strongSelf.collectionView.reloadData()
+        }) { [weak self] error in
+            guard let strongSelf = self else { return }
+            strongSelf.collectionView.refreshControl?.endRefreshing()
+            print("Product download failed: \(error)")
+        }
+        
+    }
+    
+    
+    
   // MARK: - View Lifecycle
   public override func viewDidLoad() {
     super.viewDidLoad()
@@ -80,7 +73,7 @@ public class BusinessProductsViewController: UIViewController {
 }
 
 // MARK: - UICollectionViewDataSource
-extension BusinessProductsViewController: UICollectionViewDataSource {
+extension HomeProductsViewController: UICollectionViewDataSource {
   
   public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return products.count
@@ -122,3 +115,7 @@ extension BusinessProductsViewController: UICollectionViewDataSource {
     return cell
   }
 }
+
+ 
+ 
+ //  let url = URL(string: "https://rwcleanbackend.herokuapp.com/products/home")!
