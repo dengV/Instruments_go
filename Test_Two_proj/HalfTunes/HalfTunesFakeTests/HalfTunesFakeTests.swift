@@ -10,6 +10,11 @@ import XCTest
 
 @testable import HalfTunes
 
+
+//  模拟 数据， 测试功能
+
+// 测试 性能
+
 class HalfTunesFakeTests: XCTestCase {
     
     var controllerUnderTest: SearchViewController!
@@ -63,6 +68,17 @@ class HalfTunesFakeTests: XCTestCase {
         XCTAssertEqual(controllerUnderTest.searchResults.count, 3, "Didn't parse 3 items from fake response")
     }
     
+    
+    
+    // Performance
+    func test_StartDownload_Performance(){
+        let track = Track(name: "Waterloo", artist: "ABBA", previewUrl: "http://a821.phobos.apple.com/us/r30/Music/d7/ba/ce/mzm.vsyjlsff.aac.p.m4a")
+        
+        measure {
+            self.controllerUnderTest.startDownload(track)
+        }
+        
+    }
 
     
 }

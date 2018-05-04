@@ -48,7 +48,7 @@ public final class URLSessionMock : DHURLSession {
     var completionHandler: CompletionHandler?
     var taskResponse: (Data?, URLResponse?, Error?)?
     
-    override func resume() {
+    override func resume(){ //  覆写了， 自己的逻辑， 只是借用系统方法的名字， API
       DispatchQueue.main.async {
         self.completionHandler?(self.taskResponse?.0, self.taskResponse?.1, self.taskResponse?.2)
         

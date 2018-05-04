@@ -10,21 +10,17 @@ class ViewController: UIViewController {
   @IBOutlet weak var targetGuessLabel: UILabel!
   @IBOutlet weak var targetGuessField: UITextField!
   @IBOutlet weak var roundLabel: UILabel!
+    
   @IBOutlet weak var scoreLabel: UILabel!
   @IBOutlet weak var slider: UISlider!
   @IBOutlet weak var segmentedControl: UISegmentedControl!
   
-    
-    
     
   let game = BullsEyeGame()
   enum GameStyle: Int { case moveSlider, guessPosition }
   let gameStyleRange = 0..<2
   var gameStyle: GameStyle = .guessPosition
   
-    
-    
-    
     
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -36,14 +32,15 @@ class ViewController: UIViewController {
       segmentedControl.selectedSegmentIndex = defaultGameStyle
     } else {
       gameStyle = .moveSlider
-      defaults.set(0, forKey: "gameStyle")
+      defaults.set(0, forKey: "gameStyle")// test 中， 这个方法， 被覆写了
     }
     updateView()
   }
     
     
-    
-  
+    // 这只是个方法， 满足条件， 就可以调用。
+    // 只是与 xib 有一个关联
+  // test 了，这个方法
   @IBAction func chooseGameStyle(_ sender: UISegmentedControl) {
     if gameStyleRange.contains(sender.selectedSegmentIndex) {
       gameStyle = GameStyle(rawValue: sender.selectedSegmentIndex)!
