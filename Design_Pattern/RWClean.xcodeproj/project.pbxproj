@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230528A820A43AE90052A1F6 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230528A720A43AE90052A1F6 /* ProductsViewController.swift */; };
 		2370D9332087AFAF0085FEB1 /* SetNavigationRootSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370D92E2087AFAF0085FEB1 /* SetNavigationRootSegue.swift */; };
 		2370D9342087AFAF0085FEB1 /* UIViewController+LoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370D92F2087AFAF0085FEB1 /* UIViewController+LoadingHUD.swift */; };
 		2370D9352087AFAF0085FEB1 /* LoadingHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2370D9302087AFAF0085FEB1 /* LoadingHUD.xib */; };
@@ -30,9 +31,7 @@
 		23FC5CDC2090EB2100984A3B /* RoomSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CCE2090EB2100984A3B /* RoomSize.swift */; };
 		23FC5CDD2090EB2100984A3B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CCF2090EB2100984A3B /* Product.swift */; };
 		23FC5CDE2090EB2100984A3B /* CleaningServices.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FC5CD12090EB2100984A3B /* CleaningServices.xcassets */; };
-		23FC5CDF2090EB2100984A3B /* BusinessProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CD32090EB2100984A3B /* BusinessProductsViewController.swift */; };
 		23FC5CE02090EB2100984A3B /* CleaningServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CD42090EB2100984A3B /* CleaningServicesTableViewController.swift */; };
-		23FC5CE12090EB2100984A3B /* HomeProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CD52090EB2100984A3B /* HomeProductsViewController.swift */; };
 		23FC5CE22090EB2100984A3B /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CD62090EB2100984A3B /* ProductDetailsViewController.swift */; };
 		23FC5CE32090EB2100984A3B /* CleaningServices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FC5CD82090EB2100984A3B /* CleaningServices.storyboard */; };
 		23FC5CE42090EB2100984A3B /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CD92090EB2100984A3B /* ProductCollectionViewCell.swift */; };
@@ -53,6 +52,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230528A720A43AE90052A1F6 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		2370D92E2087AFAF0085FEB1 /* SetNavigationRootSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetNavigationRootSegue.swift; sourceTree = "<group>"; };
 		2370D92F2087AFAF0085FEB1 /* UIViewController+LoadingHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadingHUD.swift"; sourceTree = "<group>"; };
 		2370D9302087AFAF0085FEB1 /* LoadingHUD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingHUD.xib; sourceTree = "<group>"; };
@@ -77,9 +77,7 @@
 		23FC5CCE2090EB2100984A3B /* RoomSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomSize.swift; sourceTree = "<group>"; };
 		23FC5CCF2090EB2100984A3B /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		23FC5CD12090EB2100984A3B /* CleaningServices.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CleaningServices.xcassets; sourceTree = "<group>"; };
-		23FC5CD32090EB2100984A3B /* BusinessProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessProductsViewController.swift; sourceTree = "<group>"; };
 		23FC5CD42090EB2100984A3B /* CleaningServicesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningServicesTableViewController.swift; sourceTree = "<group>"; };
-		23FC5CD52090EB2100984A3B /* HomeProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProductsViewController.swift; sourceTree = "<group>"; };
 		23FC5CD62090EB2100984A3B /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		23FC5CD82090EB2100984A3B /* CleaningServices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CleaningServices.storyboard; sourceTree = "<group>"; };
 		23FC5CD92090EB2100984A3B /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -272,10 +270,9 @@
 		23FC5CD22090EB2100984A3B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				23FC5CD32090EB2100984A3B /* BusinessProductsViewController.swift */,
 				23FC5CD42090EB2100984A3B /* CleaningServicesTableViewController.swift */,
-				23FC5CD52090EB2100984A3B /* HomeProductsViewController.swift */,
 				23FC5CD62090EB2100984A3B /* ProductDetailsViewController.swift */,
+				230528A720A43AE90052A1F6 /* ProductsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -484,6 +481,7 @@
 				2370D9342087AFAF0085FEB1 /* UIViewController+LoadingHUD.swift in Sources */,
 				2370D94C2087B1860085FEB1 /* Int+HTTPStatusCode.swift in Sources */,
 				23FC5D042090EC8D00984A3B /* StartHomeInfoViewController.swift in Sources */,
+				230528A820A43AE90052A1F6 /* ProductsViewController.swift in Sources */,
 				2370D9332087AFAF0085FEB1 /* SetNavigationRootSegue.swift in Sources */,
 				23FC5CFF2090EC8D00984A3B /* RoomCountViewController.swift in Sources */,
 				2370D9372087AFAF0085FEB1 /* LoadingHUD.swift in Sources */,
@@ -495,8 +493,6 @@
 				2370D9442087B04D0085FEB1 /* WelcomePageViewController.swift in Sources */,
 				23FC5CE02090EB2100984A3B /* CleaningServicesTableViewController.swift in Sources */,
 				23FC5CDB2090EB2100984A3B /* CleaningServicesBuilder.swift in Sources */,
-				23FC5CDF2090EB2100984A3B /* BusinessProductsViewController.swift in Sources */,
-				23FC5CE12090EB2100984A3B /* HomeProductsViewController.swift in Sources */,
 				23FC5D022090EC8D00984A3B /* OtherRoomCountViewController.swift in Sources */,
 				2370D9482087B17D0085FEB1 /* NetworkClient.swift in Sources */,
 				23FC5CDC2090EB2100984A3B /* RoomSize.swift in Sources */,
