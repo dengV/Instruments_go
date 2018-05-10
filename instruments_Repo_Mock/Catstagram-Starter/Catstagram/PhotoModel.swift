@@ -20,13 +20,17 @@ class PhotoModel: NSObject {
     var ownerUserProfile: UserModel?
 
     init(photoDictionary: [String: Any]) {
+        //if let urlStringArray = photoDictionary["image_url"] as? Array{}
+        //  就报错， Ambiguous reference to member 'subscript'
         
+      
         if let urlStringArray = photoDictionary["image_url"] as? [String]{
             let urlString = urlStringArray.first!
             url              = URL(string: urlString)
         }
         
-        uploadDateString = photoDictionary["created_at"] as? String
+  //  https://stackoverflow.com/questions/34995173/swift-error-ambiguous-reference-to-member-subscript
+        
         photoID          = photoDictionary["id"] as? Int
         title            = photoDictionary["title"] as? String
         descriptionText  = photoDictionary["name"] as? String
@@ -51,3 +55,44 @@ class PhotoModel: NSObject {
         return NSAttributedString(string: "\(likesCount) likes", fontSize: CGFloat(size), color: UIColor.darkBlue(), firstWordColor: nil)
     }
 }
+
+
+
+
+/*
+ 
+ 
+ 附加资料:
+ 
+ 
+ [WP] Where to get 500px Consumer Key?
+ 
+ 
+ To get 500px consumer key login to your 500px acount and go to Acount > Applications.
+ 
+ If you don't have registered app, you need to click on "Register Your Application" green button, and entered details.
+ 
+ 
+ 
+ 
+ 
+ */
+
+
+
+
+/*
+ 
+ 
+ After you register your app click on "See application details" and copy your Consumer Key.
+ */
+
+
+
+
+
+/*
+ 
+ 
+ http://help.dimsemenov.com/kb/wordpress-royalslider-tutorials/wp-where-to-get-500px-consumer-key
+ */

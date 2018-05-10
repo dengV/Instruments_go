@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2309441C20A4260D00328989 /* get_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309441B20A4260D00328989 /* get_1.json */; };
+		23A113B720A42C780076088F /* cat_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23A113B320A42C780076088F /* cat_1.jpg */; };
+		23A113B820A42C780076088F /* cat_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23A113B420A42C780076088F /* cat_0.jpg */; };
+		23A113B920A42C780076088F /* cat_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23A113B520A42C780076088F /* cat_2.jpg */; };
+		23A113BA20A42C780076088F /* cat_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23A113B620A42C780076088F /* cat_3.jpg */; };
 		AE3DBE0B1E5181E500EDBD0C /* CatPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3DBE0A1E5181E500EDBD0C /* CatPhotoTableViewCell.swift */; };
 		AE3DBE0D1E51850000EDBD0C /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3DBE0C1E51850000EDBD0C /* PhotoModel.swift */; };
 		AE3DBE111E51907600EDBD0C /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3DBE101E51907600EDBD0C /* Utilities.m */; };
@@ -23,6 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2309441B20A4260D00328989 /* get_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = get_1.json; sourceTree = "<group>"; };
+		23A113B320A42C780076088F /* cat_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat_1.jpg; sourceTree = "<group>"; };
+		23A113B420A42C780076088F /* cat_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat_0.jpg; sourceTree = "<group>"; };
+		23A113B520A42C780076088F /* cat_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat_2.jpg; sourceTree = "<group>"; };
+		23A113B620A42C780076088F /* cat_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat_3.jpg; sourceTree = "<group>"; };
 		AE3DBE0A1E5181E500EDBD0C /* CatPhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatPhotoTableViewCell.swift; path = Catstagram/CatPhotoTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		AE3DBE0C1E51850000EDBD0C /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoModel.swift; path = Catstagram/PhotoModel.swift; sourceTree = SOURCE_ROOT; };
 		AE3DBE0E1E51907600EDBD0C /* Catstagram-Starter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Catstagram-Starter-Bridging-Header.h"; path = "Catstagram/Catstagram-Starter-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
@@ -53,6 +63,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2309441A20A4260D00328989 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				23A113B420A42C780076088F /* cat_0.jpg */,
+				23A113B320A42C780076088F /* cat_1.jpg */,
+				23A113B520A42C780076088F /* cat_2.jpg */,
+				23A113B620A42C780076088F /* cat_3.jpg */,
+				2309441B20A4260D00328989 /* get_1.json */,
+			);
+			name = Resource;
+			path = Resource/Resource;
+			sourceTree = SOURCE_ROOT;
+		};
 		AE3DBE091E5180B700EDBD0C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,7 @@
 		AE79F4D91E4DA43F005223AF /* Catstagram */ = {
 			isa = PBXGroup;
 			children = (
+				2309441A20A4260D00328989 /* Resource */,
 				AE79F4DA1E4DA43F005223AF /* AppDelegate.swift */,
 				AE79F4EE1E4DA97F005223AF /* Controller */,
 				AE79F4EF1E4DA986005223AF /* View */,
@@ -152,7 +176,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Luke Parham";
 				TargetAttributes = {
 					AE79F4D61E4DA43F005223AF = {
@@ -186,9 +210,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A113B820A42C780076088F /* cat_0.jpg in Resources */,
+				23A113B920A42C780076088F /* cat_2.jpg in Resources */,
 				AE998AB61E5A4A6800BAC694 /* OleoScript-Bold.ttf in Resources */,
 				AE998AB71E5A4A6800BAC694 /* OleoScript-Regular.ttf in Resources */,
+				2309441C20A4260D00328989 /* get_1.json in Resources */,
 				AE79F4E51E4DA43F005223AF /* LaunchScreen.storyboard in Resources */,
+				23A113B720A42C780076088F /* cat_1.jpg in Resources */,
+				23A113BA20A42C780076088F /* cat_3.jpg in Resources */,
 				AE79F4E21E4DA43F005223AF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +269,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -247,6 +277,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -256,7 +287,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -295,6 +326,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -302,6 +334,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
