@@ -54,19 +54,27 @@ class CatFeedViewController: UIViewController, UITableViewDataSource, UITableVie
         
         motionManager.startDeviceMotionUpdates(to: .main, withHandler:{ deviceMotion, error in
             guard let deviceMotion = deviceMotion else { return }
-            
+            guard abs( deviceMotion.rotationRate.y - self.lastY ) > 0.1 else {   return  }       // 这行是 新加的,   // 不满足条件， just bail
             let xRotationRate = CGFloat(deviceMotion.rotationRate.x)
             let yRotationRate = CGFloat(deviceMotion.rotationRate.y)
             let zRotationRate = CGFloat(deviceMotion.rotationRate.z)
             
             self.lastY = deviceMotion.rotationRate.y
-            print("y \(yRotationRate) and x \(xRotationRate) and z\(zRotationRate)")
+         //   print("y \(yRotationRate) and x \(xRotationRate) and z\(zRotationRate)")              // this is all allocating arrays and memory on the heap.
             
             if abs(yRotationRate) > (abs(xRotationRate) + abs(zRotationRate)) {
                 for cell in self.tableView.visibleCells as! [CatPhotoTableViewCell] {
                     cell.panImage(with: yRotationRate)
                 }
-            }
+            }//     if abs(yRotationRate) > (abs(xRotationRate) + abs(zRotationRate))                            //      meaning the y , is the main way , we turn things
+            // 连续不断 的 y, 所有 小数据 建议做一个筛选, 临界区 ?? threshold
+            //  we pass that y to the pan image method. to move our image around.
+            //  Since these events are always happening,
+            //  that means we are probably passing a lot of really amall values of y, into this method here,
+            //  and we are always updating this image.
+            // if wannas stop doing all this unnecessary work,
+            // 应当 is check to see that
+            // y moved greater than some threshold amout,
         })
     }
     
@@ -159,3 +167,6 @@ class CatFeedViewController: UIViewController, UITableViewDataSource, UITableVie
     }
 }
 
+
+
+// 阈值的，临界值的,  threshold
