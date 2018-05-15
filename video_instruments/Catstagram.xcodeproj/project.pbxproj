@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23A3B87820AB4114006C57D8 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A3B87720AB4114006C57D8 /* AsyncImageView.swift */; };
 		AE3DBE0B1E5181E500EDBD0C /* CatPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3DBE0A1E5181E500EDBD0C /* CatPhotoTableViewCell.swift */; };
 		AE3DBE0D1E51850000EDBD0C /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3DBE0C1E51850000EDBD0C /* PhotoModel.swift */; };
 		AE3DBE111E51907600EDBD0C /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3DBE101E51907600EDBD0C /* Utilities.m */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23A3B87720AB4114006C57D8 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = SOURCE_ROOT; };
 		AE3DBE0A1E5181E500EDBD0C /* CatPhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatPhotoTableViewCell.swift; path = Catstagram/CatPhotoTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		AE3DBE0C1E51850000EDBD0C /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoModel.swift; path = Catstagram/PhotoModel.swift; sourceTree = SOURCE_ROOT; };
 		AE3DBE0E1E51907600EDBD0C /* Catstagram-Starter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Catstagram-Starter-Bridging-Header.h"; path = "Catstagram/Catstagram-Starter-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				AE3DBE0A1E5181E500EDBD0C /* CatPhotoTableViewCell.swift */,
+				23A3B87720AB4114006C57D8 /* AsyncImageView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				AE3DBE111E51907600EDBD0C /* Utilities.m in Sources */,
 				AE79F4DD1E4DA43F005223AF /* CatFeedViewController.swift in Sources */,
 				AE3DBE151E51925A00EDBD0C /* UserModel.swift in Sources */,
+				23A3B87820AB4114006C57D8 /* AsyncImageView.swift in Sources */,
 				AE79F4DB1E4DA43F005223AF /* AppDelegate.swift in Sources */,
 				AEC4FA741E52DC4C007B9024 /* PhotoFeedModel.swift in Sources */,
 				AE79F4ED1E4DA500005223AF /* WindowWithStatusBar.swift in Sources */,

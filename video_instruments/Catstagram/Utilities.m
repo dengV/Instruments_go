@@ -185,6 +185,9 @@ static NSDate *parseRfc3339ToNSDate(NSString *rfc3339DateTimeString)
     }];
     [task resume];
       return task;
+      
+      
+      //    下载当然要开线程，  20180515
   }
     return nil;
 }

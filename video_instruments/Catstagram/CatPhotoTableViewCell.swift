@@ -9,21 +9,39 @@
 
 import UIKit
 
+
+
+/*
+ 
+ 
+ So instead of using imageView,
+ 
+ We are gonna go ahead and make our own
+ 
+ 
+ asynchrouously imageview.
+
+ 
+ */
+
+
+
+
 class CatPhotoTableViewCell: UITableViewCell {
-    let userImageHeight:CGFloat = 30
+    internal let userImageHeight:CGFloat = 30
     
-    var photoModel: PhotoModel? = nil
+    private var photoModel: PhotoModel? = nil
     
-    var userAvatarImageView = UIImageView()
-    var photoImageView = UIImageView()
+    internal var userAvatarImageView = AsyncImageView()
+    internal var photoImageView = AsyncImageView()
     
-    var userNameLabel = UILabel()
-    var photoTimeIntervalSincePostLabel = UILabel()
-    var photoLikesLabel = UILabel()
-    var photoDescriptionLabel = UILabel()
+    internal var userNameLabel = UILabel()
+    internal var photoTimeIntervalSincePostLabel = UILabel()
+    internal var photoLikesLabel = UILabel()
+    internal var photoDescriptionLabel = UILabel()
     
-    var userNameYPositionWithoutPhotoLocation = NSLayoutConstraint()
-    var photoLocationYPosition = NSLayoutConstraint()
+    internal var userNameYPositionWithoutPhotoLocation = NSLayoutConstraint()
+    private var photoLocationYPosition = NSLayoutConstraint()
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -51,7 +69,7 @@ class CatPhotoTableViewCell: UITableViewCell {
     func downloadAndProcessUserAvatar(forPhoto photoModel: PhotoModel) {
         UIImage.downloadImage(for: photoModel.url) { (image) in
             if self.photoModel == photoModel {
-                self.userAvatarImageView.image = image//?.makeCircularImage(with: size)
+                self.userAvatarImageView.image = image              //?.makeCircularImage(with: size)
             }
         }
     }
@@ -83,7 +101,7 @@ class CatPhotoTableViewCell: UITableViewCell {
         updateConstraints()
     }
     
-    //MARK: Cell Reuse
+    //MARK: Cell Reuse   外部方法
     func updateCell(with photo: PhotoModel?) {
         photoModel = photo
         
