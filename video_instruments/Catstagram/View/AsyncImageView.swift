@@ -6,6 +6,8 @@
 //  Copyright © 2018年 Luke Parham. All rights reserved.
 //
 
+// 异步解码图片视图
+
 import UIKit
 
 class AsyncImageView: UIView {
