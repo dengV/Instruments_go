@@ -46,16 +46,7 @@ class ViewController: NSViewController {
         
         helloLabel.stringValue = greeting
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
         
     }
     
