@@ -446,7 +446,7 @@ DQ
                                             <font key="font" metaFont="system" size="24"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="stopButtonClicked:" target="Oil-cY-nJb" id="ssF-te-Qgy"/>
+                                            <action selector="startButtonClicked:" target="Oil-cY-nJb" id="Wee-XM-LJH"/>
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Azl-NJ-4st">
@@ -456,7 +456,7 @@ DQ
                                             <font key="font" metaFont="system" size="24"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="stopButtonClickedand:" target="Oil-cY-nJb" id="hM0-jV-Jqa"/>
+                                            <action selector="stopButtonClicked:" target="Oil-cY-nJb" id="Fzz-7q-k4Y"/>
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0Ru-iF-ihs">

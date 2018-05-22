@@ -21,10 +21,15 @@ class SceneOneViewController: NSViewController {
     @IBOutlet weak var resetButton: NSButton!
     
     
+    var eggTimer = EggTimer()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        eggTimer.delegate = self
+        
+        
+        
     }
     
     
@@ -77,6 +82,46 @@ class SceneOneViewController: NSViewController {
     @IBAction func resetTimerMenuItemSelected(_ sender: Any) {
         resetButtonClicked(sender)
     }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+extension SceneOneViewController: EggTimerProtocol{
+    
+    func timerHasFinished(_ timer: EggTimer) {
+        
+    }
+    
+    
+    
+    func timeRemaingOnTimer(_ timer: EggTimer, timeRemaining: TimeInterval) {
+        
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+extension SceneOneViewController{
+    
+    
+    
+    
+    
     
     
 }

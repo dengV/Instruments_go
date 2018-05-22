@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23731A0920B3007900826015 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23731A0820B3007900826015 /* ViewController.swift */; };
-		23731A0D20B300A500826015 /* SceneOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23731A0B20B300A500826015 /* SceneOneViewController.swift */; };
-		23731A0E20B300A500826015 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23731A0C20B300A500826015 /* PreferenceViewController.swift */; };
 		2383A3A720B093CD00313750 /* coco_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383A3A620B093CD00313750 /* coco_appTests.swift */; };
 		2383A3B220B093CD00313750 /* coco_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383A3B120B093CD00313750 /* coco_appUITests.swift */; };
-		23A2FA6020B0A24500535A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FA5A20B0A24500535A9B /* Assets.xcassets */; };
-		23A2FA6120B0A24500535A9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FA5B20B0A24500535A9B /* Main.storyboard */; };
-		23A2FA6220B0A24500535A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FA5D20B0A24500535A9B /* AppDelegate.swift */; };
+		23B1B77E20B40DBB00A62EAF /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1B77220B40DBA00A62EAF /* PreferenceViewController.swift */; };
+		23B1B77F20B40DBB00A62EAF /* SceneOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1B77320B40DBA00A62EAF /* SceneOneViewController.swift */; };
+		23B1B78020B40DBB00A62EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B1B77520B40DBA00A62EAF /* Main.storyboard */; };
+		23B1B78120B40DBB00A62EAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1B77820B40DBB00A62EAF /* ViewController.swift */; };
+		23B1B78220B40DBB00A62EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B1B77920B40DBB00A62EAF /* Assets.xcassets */; };
+		23B1B78420B40DBB00A62EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1B77D20B40DBB00A62EAF /* AppDelegate.swift */; };
+		23B1B78720B40F9600A62EAF /* EggTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1B78620B40F9600A62EAF /* EggTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23731A0820B3007900826015 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		23731A0B20B300A500826015 /* SceneOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneOneViewController.swift; sourceTree = "<group>"; };
-		23731A0C20B300A500826015 /* PreferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 		2383A39020B093CD00313750 /* coco_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coco_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2383A3A220B093CD00313750 /* coco_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coco_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2383A3A620B093CD00313750 /* coco_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coco_appTests.swift; sourceTree = "<group>"; };
@@ -45,11 +43,15 @@
 		2383A3AD20B093CD00313750 /* coco_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coco_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2383A3B120B093CD00313750 /* coco_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coco_appUITests.swift; sourceTree = "<group>"; };
 		2383A3B320B093CD00313750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23A2FA5920B0A24500535A9B /* coco_app.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = coco_app.entitlements; sourceTree = "<group>"; };
-		23A2FA5A20B0A24500535A9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		23A2FA5C20B0A24500535A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		23A2FA5D20B0A24500535A9B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23A2FA5E20B0A24500535A9B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23B1B77220B40DBA00A62EAF /* PreferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
+		23B1B77320B40DBA00A62EAF /* SceneOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneOneViewController.swift; sourceTree = "<group>"; };
+		23B1B77620B40DBA00A62EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		23B1B77820B40DBB00A62EAF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23B1B77920B40DBB00A62EAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23B1B77B20B40DBB00A62EAF /* coco_app.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = coco_app.entitlements; sourceTree = "<group>"; };
+		23B1B77C20B40DBB00A62EAF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23B1B77D20B40DBB00A62EAF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23B1B78620B40F9600A62EAF /* EggTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,23 +79,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23731A0720B3007900826015 /* Controllers_one */ = {
-			isa = PBXGroup;
-			children = (
-				23731A0820B3007900826015 /* ViewController.swift */,
-			);
-			path = Controllers_one;
-			sourceTree = "<group>";
-		};
-		23731A0A20B3009200826015 /* Controllers_two */ = {
-			isa = PBXGroup;
-			children = (
-				23731A0C20B300A500826015 /* PreferenceViewController.swift */,
-				23731A0B20B300A500826015 /* SceneOneViewController.swift */,
-			);
-			path = Controllers_two;
-			sourceTree = "<group>";
-		};
 		2383A38720B093CD00313750 = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +102,13 @@
 		2383A39220B093CD00313750 /* coco_app */ = {
 			isa = PBXGroup;
 			children = (
-				23A2FA5720B0A24500535A9B /* coco_app */,
+				23B1B78520B40F8B00A62EAF /* Model */,
+				23B1B77D20B40DBB00A62EAF /* AppDelegate.swift */,
+				23B1B77920B40DBB00A62EAF /* Assets.xcassets */,
+				23B1B77420B40DBA00A62EAF /* Base.lproj */,
+				23B1B77720B40DBB00A62EAF /* Controllers_one */,
+				23B1B77120B40DBA00A62EAF /* Controllers_two */,
+				23B1B77A20B40DBB00A62EAF /* supporting_files */,
 			);
 			path = coco_app;
 			sourceTree = "<group>";
@@ -140,18 +131,46 @@
 			path = coco_appUITests;
 			sourceTree = "<group>";
 		};
-		23A2FA5720B0A24500535A9B /* coco_app */ = {
+		23B1B77120B40DBA00A62EAF /* Controllers_two */ = {
 			isa = PBXGroup;
 			children = (
-				23731A0A20B3009200826015 /* Controllers_two */,
-				23731A0720B3007900826015 /* Controllers_one */,
-				23A2FA5920B0A24500535A9B /* coco_app.entitlements */,
-				23A2FA5A20B0A24500535A9B /* Assets.xcassets */,
-				23A2FA5B20B0A24500535A9B /* Main.storyboard */,
-				23A2FA5D20B0A24500535A9B /* AppDelegate.swift */,
-				23A2FA5E20B0A24500535A9B /* Info.plist */,
+				23B1B77220B40DBA00A62EAF /* PreferenceViewController.swift */,
+				23B1B77320B40DBA00A62EAF /* SceneOneViewController.swift */,
 			);
-			name = coco_app;
+			path = Controllers_two;
+			sourceTree = "<group>";
+		};
+		23B1B77420B40DBA00A62EAF /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				23B1B77520B40DBA00A62EAF /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		23B1B77720B40DBB00A62EAF /* Controllers_one */ = {
+			isa = PBXGroup;
+			children = (
+				23B1B77820B40DBB00A62EAF /* ViewController.swift */,
+			);
+			path = Controllers_one;
+			sourceTree = "<group>";
+		};
+		23B1B77A20B40DBB00A62EAF /* supporting_files */ = {
+			isa = PBXGroup;
+			children = (
+				23B1B77B20B40DBB00A62EAF /* coco_app.entitlements */,
+				23B1B77C20B40DBB00A62EAF /* Info.plist */,
+			);
+			path = supporting_files;
+			sourceTree = "<group>";
+		};
+		23B1B78520B40F8B00A62EAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23B1B78620B40F9600A62EAF /* EggTimer.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +241,7 @@
 				TargetAttributes = {
 					2383A38F20B093CD00313750 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					2383A3A120B093CD00313750 = {
@@ -261,8 +281,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A2FA6020B0A24500535A9B /* Assets.xcassets in Resources */,
-				23A2FA6120B0A24500535A9B /* Main.storyboard in Resources */,
+				23B1B78220B40DBB00A62EAF /* Assets.xcassets in Resources */,
+				23B1B78020B40DBB00A62EAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,10 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23731A0D20B300A500826015 /* SceneOneViewController.swift in Sources */,
-				23A2FA6220B0A24500535A9B /* AppDelegate.swift in Sources */,
-				23731A0920B3007900826015 /* ViewController.swift in Sources */,
-				23731A0E20B300A500826015 /* PreferenceViewController.swift in Sources */,
+				23B1B78420B40DBB00A62EAF /* AppDelegate.swift in Sources */,
+				23B1B78120B40DBB00A62EAF /* ViewController.swift in Sources */,
+				23B1B78720B40F9600A62EAF /* EggTimer.swift in Sources */,
+				23B1B77F20B40DBB00A62EAF /* SceneOneViewController.swift in Sources */,
+				23B1B77E20B40DBB00A62EAF /* PreferenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,10 +347,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		23A2FA5B20B0A24500535A9B /* Main.storyboard */ = {
+		23B1B77520B40DBA00A62EAF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				23A2FA5C20B0A24500535A9B /* Base */,
+				23B1B77620B40DBA00A62EAF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -447,14 +468,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = coco_app/coco_app.entitlements;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = coco_app/supporting_files/coco_app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9ZPF2ERCW9;
-				INFOPLIST_FILE = coco_app/Info.plist;
+				INFOPLIST_FILE = coco_app/supporting_files/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dengjiangzhou.coco-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -463,11 +486,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = coco_app/coco_app.entitlements;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = coco_app/supporting_files/coco_app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9ZPF2ERCW9;
-				INFOPLIST_FILE = coco_app/Info.plist;
+				INFOPLIST_FILE = coco_app/supporting_files/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dengjiangzhou.coco-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
