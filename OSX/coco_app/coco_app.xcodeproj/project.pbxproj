@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230447A920B52E9E00FDCE1C /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230447A820B52E9E00FDCE1C /* Preferences.swift */; };
+		230447AC20B54F3900FDCE1C /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230447AB20B54F3900FDCE1C /* ding.mp3 */; };
 		2383A3A720B093CD00313750 /* coco_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383A3A620B093CD00313750 /* coco_appTests.swift */; };
 		2383A3B220B093CD00313750 /* coco_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383A3B120B093CD00313750 /* coco_appUITests.swift */; };
 		23B1B77E20B40DBB00A62EAF /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1B77220B40DBA00A62EAF /* PreferenceViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230447A820B52E9E00FDCE1C /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		230447AB20B54F3900FDCE1C /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
 		2383A39020B093CD00313750 /* coco_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coco_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2383A3A220B093CD00313750 /* coco_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coco_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2383A3A620B093CD00313750 /* coco_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coco_appTests.swift; sourceTree = "<group>"; };
@@ -79,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230447AA20B54F3900FDCE1C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				230447AB20B54F3900FDCE1C /* ding.mp3 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		2383A38720B093CD00313750 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +114,7 @@
 		2383A39220B093CD00313750 /* coco_app */ = {
 			isa = PBXGroup;
 			children = (
+				230447AA20B54F3900FDCE1C /* Resource */,
 				23B1B78520B40F8B00A62EAF /* Model */,
 				23B1B77D20B40DBB00A62EAF /* AppDelegate.swift */,
 				23B1B77920B40DBB00A62EAF /* Assets.xcassets */,
@@ -169,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				23B1B78620B40F9600A62EAF /* EggTimer.swift */,
+				230447A820B52E9E00FDCE1C /* Preferences.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +297,7 @@
 			files = (
 				23B1B78220B40DBB00A62EAF /* Assets.xcassets in Resources */,
 				23B1B78020B40DBB00A62EAF /* Main.storyboard in Resources */,
+				230447AC20B54F3900FDCE1C /* ding.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +324,7 @@
 			files = (
 				23B1B78420B40DBB00A62EAF /* AppDelegate.swift in Sources */,
 				23B1B78120B40DBB00A62EAF /* ViewController.swift in Sources */,
+				230447A920B52E9E00FDCE1C /* Preferences.swift in Sources */,
 				23B1B78720B40F9600A62EAF /* EggTimer.swift in Sources */,
 				23B1B77F20B40DBB00A62EAF /* SceneOneViewController.swift in Sources */,
 				23B1B77E20B40DBB00A62EAF /* PreferenceViewController.swift in Sources */,

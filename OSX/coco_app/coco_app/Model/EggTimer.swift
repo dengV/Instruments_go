@@ -13,7 +13,10 @@ protocol EggTimerProtocol {
     func timerHasFinished( _ timer: EggTimer )
 }
 
-
+struct kTimeConstants{
+    let durationTime: Double = 360              // default = 6 minutes
+    //      6
+}
 
 
 class EggTimer{
@@ -21,7 +24,7 @@ class EggTimer{
     var timer: Timer? = nil
     var startTime: Date?
     
-    var duration: TimeInterval = 360        // default = 6 minutes
+    var duration: TimeInterval = kTimeConstants().durationTime        // default = 6 minutes
     var elapsedTime : TimeInterval = 0
     
     
@@ -37,8 +40,9 @@ class EggTimer{
     
     var delegate: EggTimerProtocol?
     
-    
+    //      有 bug , stopped 了， 无法 继续
     @objc dynamic func timerAction(){
+        // 这个方法，就是为了调用， 那两条代理方法
         guard let startTime = startTime else{
             return
         }
@@ -46,7 +50,7 @@ class EggTimer{
         elapsedTime = -startTime.timeIntervalSinceNow
         
         let secondsRemaining = (duration - elapsedTime).rounded()
-        
+        print("secondsRemaining is \(secondsRemaining)")
         if secondsRemaining <= 0{
             resetTimer()
             delegate?.timerHasFinished(self)
@@ -65,10 +69,10 @@ class EggTimer{
     
     
     
-    func startTimer(){
+    func timerStartsToFire(){
         startTime = Date()
         elapsedTime = 0
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(timerAction)), userInfo: nil, repeats: true)
         timerAction()
     }
     
@@ -76,7 +80,10 @@ class EggTimer{
     
     func resumeTimer(){
         startTime = Date(timeIntervalSinceNow: -elapsedTime)
-        timer = Timer(timeInterval: 1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+        
+        //  timer = Timer(timeInterval: 1, target: self, selector: (#selector(timerAction)), userInfo: nil, repeats: true)
+        // 悲剧啊， 我看错了
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(timerAction)), userInfo: nil, repeats: true)
         timerAction()
     }
     
@@ -94,9 +101,13 @@ class EggTimer{
         timer?.invalidate()
         timer = nil
         startTime = nil
-        duration = 360
+        duration = kTimeConstants().durationTime
         elapsedTime = 0
+        
+        
         timerAction()
+        // 这行纯属多余
+        
     }
     
 }
