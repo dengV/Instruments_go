@@ -189,6 +189,19 @@ It will do all the drilling for u.
 <hr>
 <hr>
 
+> Besides :
+> 要心里有用户
+> 产品设计层:
+> 避免一切不必要的场景
+>
+>
+>  大学里面的: 知道停止，然后有定力
+>
+
+
+
+<hr>
+
 ### git 操作：
 
 

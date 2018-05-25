@@ -122,11 +122,19 @@ class CatPhotoTableViewCell: UITableViewCell {
         rect.size = photoDescriptionLabel.sizeThatFits(CGSize(width: availableWidth, height: CGFloat.greatestFiniteMagnitude))
         
         photoDescriptionLabel.frame = rect
+        ImagesCache.parseImage(photoModel.urlKeyStr!, imageUrl: photoModel.url! ) { (img) in
+            if self.photoModel == photo {
+                self.photoImageView.image = img
+            }
+        }
+        
+        
+        /*
         UIImage.downloadImage(for: photoModel.url) { (image) in
             if self.photoModel == photo {
                 self.photoImageView.image = image
             }
-        }
+        }*/
         downloadAndProcessUserAvatar(forPhoto: photoModel)
     }
     

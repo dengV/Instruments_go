@@ -10,6 +10,8 @@ import Foundation
 
 class PhotoModel: NSObject {
     var url: URL?
+    var urlKeyStr: String?
+    
     var photoID: Int?
     var uploadDateString: String?
     var title: String?
@@ -28,6 +30,7 @@ class PhotoModel: NSObject {
         
         uploadDateString = photoDictionary["created_at"] as? String
         photoID          = photoDictionary["id"] as? Int
+        urlKeyStr = "\(String(describing: photoID))"
         title            = photoDictionary["title"] as? String
         descriptionText  = photoDictionary["name"] as? String
         commentsCount    = photoDictionary["comments_count"] as? UInt
