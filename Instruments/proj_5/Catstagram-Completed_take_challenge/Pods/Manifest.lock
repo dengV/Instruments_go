@@ -1,0 +1,78 @@
+PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - Firebase (3.17.0):
+    - Firebase/Core (= 3.17.0)
+  - Firebase/Core (3.17.0):
+    - FirebaseAnalytics (= 3.9.0)
+    - FirebaseCore (= 3.6.0)
+  - FirebaseAnalytics (3.9.0):
+    - FirebaseCore (~> 3.6)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.6.0):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.10):
+    - FirebaseCore (~> 3.6)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - PINCache (3.0.1-beta.6):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
+    - PINCache/Core (= 3.0.1-beta.6)
+  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.6):
+    - PINOperation (~> 1.1.0)
+  - PINOperation (1.1)
+  - PINRemoteImage/Core (3.0.0-beta.13):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.0-beta.13):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.13):
+    - PINCache (= 3.0.1-beta.6)
+    - PINRemoteImage/Core
+  - Texture (2.6):
+    - Texture/PINRemoteImage (= 2.6)
+  - Texture/Core (2.6)
+  - Texture/PINRemoteImage (2.6):
+    - PINRemoteImage/iOS (= 3.0.0-beta.13)
+    - PINRemoteImage/PINCache
+    - Texture/Core
+  - Yoga (1.6.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Firebase (~> 3.15)
+  - Texture
+  - Yoga (~> 1.3)
+
+SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  Firebase: 4b66b5b59c43edac745b87f0c87e42cdd0279c13
+  FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
+  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
+  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
+  PINOperation: 7f042fa6df5b606deb4bd5997654cf7033d5be1d
+  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
+  Yoga: 81670877477311136b1b3f69a6307ce62e1c89cf
+
+PODFILE CHECKSUM: ebbc36e437062fe561c51f0acd67a3f2587a2b13
+
+COCOAPODS: 1.4.0

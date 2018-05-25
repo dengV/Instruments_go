@@ -187,6 +187,20 @@ It will do all the drilling for u.
 
 
 <hr>
+
+
+## 内存的释放机制。
+
+NSCache, 怎么从内存中， 拉取缓存数据。
+
+
+
+就是 第一次开启，搞了些数据。
+第二次开启，拉取之前的。
+
+
+
+
 <hr>
 
 > Besides :
