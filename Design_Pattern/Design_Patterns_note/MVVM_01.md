@@ -37,3 +37,21 @@ for each of the views.
 
 
 ## So just add the properties for description.
+
+
+
+<hr>
+
+<hr>
+
+
+
+### Good Trick
+
+不强调 双向绑定
+
+
+强调 业务逻辑， 模型转换语义化
+
+
+

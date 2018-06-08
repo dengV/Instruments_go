@@ -7,11 +7,23 @@
 //
 
 import Foundation
+import UIKit
 
+@objc public protocol ProductViewModelView{
+    @objc optional var productImageView: UIImageView { get }
+    @objc optional var productPriceLabel: UILabel { get }
+    @objc optional var productDescriptionLabel: UILabel { get }
+    
+    @objc optional var productTitleLabel: UILabel { get }
+}
 
-//protocol ProductViewModelView {
-   // <#requirements#>
-//}
+/*
+ Use of undeclared type 'UIImageView'
+ 这个要 import UIKit
+ 
+ 
+ 'optional' can only be applied to members of an @objc protocol
+ */
 
 
 
@@ -30,10 +42,10 @@ public final class ProductViewModel{
     // MARK:- Instance Properties
     
     public let product: Product
-    public let descriptionText: String
-    public let imageURL: URL?
+    fileprivate let descriptionText: String
+    fileprivate let imageURL: URL?
     
-    public let priceText: String
+    fileprivate let priceText: String
     public let titleText: String
     
     // MARK:- Object Lifecycle
@@ -63,4 +75,28 @@ public final class ProductViewModel{
     
     
 }
+
+
+
+
+
+extension ProductViewModel{
+    // 遵守 ProductViewModelView 协议 的 ， view
+    
+    public func configure(_ view: ProductViewModelView){
+        view.productImageView?.rw_setImage(url: imageURL)
+        view.productPriceLabel?.text = priceText
+        view.productDescriptionLabel?.text = descriptionText
+        
+        view.productTitleLabel?.text = titleText
+    }
+    
+}
+
+// Optional , 我好像又一次 ， 看见了 ，向 空对象， 发消息， 啥事没有
+
+
+// Good Trick
+
+
 

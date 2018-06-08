@@ -109,8 +109,7 @@ extension ProductsViewController: UICollectionViewDataSource {
         let productViewModel = productViewModels[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier,
                                                       for: indexPath) as! ProductCollectionViewCell
-        cell.label.text = productViewModel.titleText
-        cell.imageView.rw_setImage(url: productViewModel.imageURL)
+        productViewModel.configure(cell)
         
         return cell
     }
