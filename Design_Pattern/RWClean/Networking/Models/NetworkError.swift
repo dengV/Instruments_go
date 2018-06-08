@@ -47,7 +47,9 @@ public enum NetworkError: Error {
     case .unknown(_):        return 10002
     case .userCancelled(_):  return 99999
     }
-  }
+  } // public var statusCode: Int
+    
+    
 }
 
  

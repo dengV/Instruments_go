@@ -36,7 +36,7 @@ class ProductsViewController: UIViewController {
     
     // MARK: - Instance Properties
     internal var imageTasks: [IndexPath: URLSessionDataTask] = [:]
-    internal var products: [Product] = []
+    internal var productViewModels: [ProductViewModel] = []
     internal let session = URLSession.shared
     
     
@@ -59,7 +59,7 @@ class ProductsViewController: UIViewController {
         
         networkClient.getProducts(forType: productControllerOption, success: { [weak self] products in
             guard let strongSelf = self else { return }
-            strongSelf.products = products
+            strongSelf.productViewModels = products.map{ ProductViewModel(product: $0) }
             strongSelf.collectionView.refreshControl?.endRefreshing()
             strongSelf.collectionView.reloadData()
         }) { [weak self] error in
@@ -89,8 +89,8 @@ class ProductsViewController: UIViewController {
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let viewController = segue.destination as? ProductDetailsViewController else { return }
         let indexPath = collectionView.indexPathsForSelectedItems!.first!
-        let product = products[indexPath.row]
-        viewController.product = product
+        viewController.productViewModel = productViewModels[indexPath.row]
+        
     }
 }
 
@@ -100,42 +100,18 @@ class ProductsViewController: UIViewController {
 extension ProductsViewController: UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return products.count
+        return productViewModels.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellIdentifier = "ProductCell"
         
-        let product = products[indexPath.row]
+        let productViewModel = productViewModels[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier,
                                                       for: indexPath) as! ProductCollectionViewCell
-        cell.label.text = product.title
+        cell.label.text = productViewModel.titleText
+        cell.imageView.rw_setImage(url: productViewModel.imageURL)
         
-        imageTasks[indexPath]?.cancel()
-        
-        if let url = product.imageURL {
-            let task = session.dataTask(with: url, completionHandler: { [weak cell]
-                (data, response, error) in
-                
-                if let error = error {
-                    print("Image download failed: \(error)")
-                    return
-                }
-                
-                guard let cell = cell,
-                    let data = data,
-                    let image = UIImage(data: data) else {
-                        print("Image download failed: invalid image data!")
-                        return
-                }
-                DispatchQueue.main.async { [weak cell] in
-                    guard let cell = cell else { return }
-                    cell.imageView.image = image
-                }
-            })
-            imageTasks[indexPath] = task
-            task.resume()
-        }
         return cell
     }
 }

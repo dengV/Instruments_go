@@ -13,10 +13,7 @@ public class CleaningServicesTableViewController: UITableViewController {
   // MARK: - View Lifecycle
   public override func viewDidLoad() {
     super.viewDidLoad()
-    configureTableView()
-  }
-  
-  private func configureTableView() {
+
     tableView.tableFooterView = UIView()
   }  
   
@@ -31,7 +28,7 @@ public class CleaningServicesTableViewController: UITableViewController {
     
     
     
-     // MARK: Navi
+     // MARK: Navi  - Segue
     
     
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
