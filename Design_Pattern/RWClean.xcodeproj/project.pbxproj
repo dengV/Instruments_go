@@ -27,6 +27,7 @@
 		2370D9602087B2330085FEB1 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370D9582087B2330085FEB1 /* MenuTableViewController.swift */; };
 		2370D9612087B2330085FEB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2370D95A2087B2330085FEB1 /* LaunchScreen.storyboard */; };
 		2370D9622087B2330085FEB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2370D95B2087B2330085FEB1 /* Main.storyboard */; };
+		2399D45E20CD8D28005C201B /* MulticastClosureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2399D45D20CD8D28005C201B /* MulticastClosureDelegate.swift */; };
 		23A185B020CA16FE008857DB /* CleaningServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A185AF20CA16FE008857DB /* CleaningServicesTableViewController.swift */; };
 		23A185B320CA1720008857DB /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A185B220CA1720008857DB /* ProductViewModel.swift */; };
 		23FC5CDB2090EB2100984A3B /* CleaningServicesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC5CCC2090EB2100984A3B /* CleaningServicesBuilder.swift */; };
@@ -74,6 +75,7 @@
 		2370D9582087B2330085FEB1 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		2370D95A2087B2330085FEB1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2370D95B2087B2330085FEB1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2399D45D20CD8D28005C201B /* MulticastClosureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastClosureDelegate.swift; sourceTree = "<group>"; };
 		23A185AF20CA16FE008857DB /* CleaningServicesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningServicesTableViewController.swift; sourceTree = "<group>"; };
 		23A185B220CA1720008857DB /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		23FC5CCC2090EB2100984A3B /* CleaningServicesBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningServicesBuilder.swift; sourceTree = "<group>"; };
@@ -240,6 +242,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2399D45C20CD8D28005C201B /* MulticastClosureDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2399D45D20CD8D28005C201B /* MulticastClosureDelegate.swift */,
+			);
+			path = MulticastClosureDelegate;
+			sourceTree = "<group>";
+		};
 		23A185AE20CA16B6008857DB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +399,7 @@
 				2370D94F2087B2330085FEB1 /* App */,
 				23FC5CCB2090EB2100984A3B /* Clearning Services */,
 				23FC5CE62090EC8D00984A3B /* Home Info */,
+				2399D45C20CD8D28005C201B /* MulticastClosureDelegate */,
 				2370D9382087AFBD0085FEB1 /* Networking */,
 				2370D92D2087AFAF0085FEB1 /* Theme */,
 				2370D9392087B04D0085FEB1 /* Welcome */,
@@ -506,6 +517,7 @@
 				23FC5CDB2090EB2100984A3B /* CleaningServicesBuilder.swift in Sources */,
 				23FC5D022090EC8D00984A3B /* OtherRoomCountViewController.swift in Sources */,
 				2370D9482087B17D0085FEB1 /* NetworkClient.swift in Sources */,
+				2399D45E20CD8D28005C201B /* MulticastClosureDelegate.swift in Sources */,
 				23FC5CDC2090EB2100984A3B /* RoomSize.swift in Sources */,
 				23A185B320CA1720008857DB /* ProductViewModel.swift in Sources */,
 				23FC5CDD2090EB2100984A3B /* Product.swift in Sources */,
