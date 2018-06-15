@@ -63,13 +63,15 @@ class ViewController: UIViewController {
         failureClosure()
         
         
-        print(multicastDelegate.count)
+        print( "multicastDelegate.count is \(multicastDelegate.count)")
         
         
         
         // MARK: - Multithreading
         print("-- Multithreading --")
-        multicastDelegate.mapTable.removeAllObjects()
+      //   multicastDelegate.mapTable.removeAllObjects()
+        multicastDelegate.mapTable.unsafeValue.removeAllObjects()
+        
         
         // 清空， 从新 开始
         

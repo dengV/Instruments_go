@@ -51,7 +51,15 @@ public class MulticastClosureDelegate<Success, Failure> {
     
     // MARK: - Instance Properties
     //  fileprivate var mapTable
-    var mapTable = NSMapTable<AnyObject, NSMutableArray>.weakToStrongObjects()
+    
+    
+    //  var mapTable = NSMapTable<AnyObject, NSMutableArray>.weakToStrongObjects()
+    internal var mapTable = SynchronizedValue(
+        NSMapTable<AnyObject, NSMutableArray>.weakToStrongObjects()
+    )
+    
+    
+    
     //  use NSMapTable , to hold onto the object to closure mappings.
     //  An NSMapTable is similar to a plain vanilla swift dictionary.
     //  Both have keys and values.
@@ -81,10 +89,24 @@ public class MulticastClosureDelegate<Success, Failure> {
     public func addClosurePair(_ objectKey: AnyObject, queue: DispatchQueue = .main, success: Success, failure: Failure ){
         // 增添 闭包 对
         
-        let callBack = CallBack(queue: queue, success: success, failure: failure)
+       /* let callBack = CallBack(queue: queue, success: success, failure: failure)
         let array = mapTable.object(forKey: objectKey) ?? NSMutableArray()
         array.add(callBack)
         mapTable.setObject(array, forKey: objectKey)
+        */
+        
+        
+        mapTable.set { mapTable in
+            let callBack = CallBack(queue: queue, success: success, failure: failure)
+            let array = mapTable.object(forKey: objectKey) ?? NSMutableArray()
+            array.add(callBack)
+            mapTable.setObject(array, forKey: objectKey)
+        }
+        
+        
+        
+        
+        
     } // 但从这个方法， 没必要用 NSMutableArray
     //  Next, we will add a method , to actually register closures using this callback.
     //
@@ -99,6 +121,10 @@ public class MulticastClosureDelegate<Success, Failure> {
     //  return all of the callback instances for us.
     //  fileprivate
     func getCallBacks(removeAfter: Bool = true) -> [CallBack]{
+        
+        
+        /*
+        
         let objects = mapTable.keyEnumerator().allObjects as [AnyObject]
         let callbacks: [CallBack] = objects.reduce( [] ) { (combinedArray, objectKey) in
             let array = mapTable.object(forKey: objectKey)! as! [CallBack]
@@ -118,8 +144,24 @@ public class MulticastClosureDelegate<Success, Failure> {
         // here we pass removeAfter , to clean up the callbacks by removing them from the map table.
         objects.forEach {    mapTable.removeObject(forKey: $0)
         }
+ 
+ */
+        var callBacks: [CallBack]!
+        mapTable.set { mapTable in
+            let objects = mapTable.keyEnumerator().allObjects as [AnyObject]
+            callBacks = objects.reduce( [] ) { (combinedArray, objectKey) in
+                let array = mapTable.object(forKey: objectKey)! as! [CallBack]
+                return combinedArray + array
+            }
+            
+            guard removeAfter else {  return  }
+            
+            // here we pass removeAfter , to clean up the callbacks by removing them from the map table.
+            objects.forEach {    mapTable.removeObject(forKey: $0)  }
+        }
         
-        return callbacks
+        
+        return callBacks
     }
     
     
@@ -170,12 +212,16 @@ public class MulticastClosureDelegate<Success, Failure> {
     // as this will just be a computed property, 计算属性
 }
 
+
+
+
+
 // MARK: - Testing
 typealias Success = () -> Void
 typealias Failure = () -> Void
 
 
-
+// 尼玛的， 泛型， 还能 这么用 啊
 
 
 

@@ -15,6 +15,7 @@
 		2355C29C20D3A70F002AB5A3 /* i_twoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2355C29B20D3A70F002AB5A3 /* i_twoTests.swift */; };
 		2355C2A720D3A70F002AB5A3 /* i_twoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2355C2A620D3A70F002AB5A3 /* i_twoUITests.swift */; };
 		2355C2B520D3A739002AB5A3 /* MulticastClosureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2355C2B420D3A739002AB5A3 /* MulticastClosureDelegate.swift */; };
+		2355C2B720D3B1FA002AB5A3 /* SynchronizedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2355C2B620D3B1FA002AB5A3 /* SynchronizedValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2355C2A620D3A70F002AB5A3 /* i_twoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = i_twoUITests.swift; sourceTree = "<group>"; };
 		2355C2A820D3A70F002AB5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2355C2B420D3A739002AB5A3 /* MulticastClosureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastClosureDelegate.swift; sourceTree = "<group>"; };
+		2355C2B620D3B1FA002AB5A3 /* SynchronizedValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				2355C28D20D3A70F002AB5A3 /* Assets.xcassets */,
 				2355C28F20D3A70F002AB5A3 /* LaunchScreen.storyboard */,
 				2355C29220D3A70F002AB5A3 /* Info.plist */,
+				2355C2B620D3B1FA002AB5A3 /* SynchronizedValue.swift */,
 			);
 			path = i_two;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				2355C28920D3A70F002AB5A3 /* ViewController.swift in Sources */,
 				2355C28720D3A70F002AB5A3 /* AppDelegate.swift in Sources */,
 				2355C2B520D3A739002AB5A3 /* MulticastClosureDelegate.swift in Sources */,
+				2355C2B720D3B1FA002AB5A3 /* SynchronizedValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
