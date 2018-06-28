@@ -78,12 +78,8 @@ class ViewController: UIViewController {
         for _ in 0..<3 {
             
             DispatchQueue.global(qos: .background ).async {
-                multicastDelegate.addClosurePair(delegate, success: {
-                    
-                }, failure: {
-                    
-                })
-            print("count: \(multicastDelegate.count)")
+                multicastDelegate.addClosurePair(delegate, success: { }, failure: { })
+                print("count: \(multicastDelegate.count)")
             }
             
         }
