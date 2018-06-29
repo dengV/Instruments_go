@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		230528A820A43AE90052A1F6 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230528A720A43AE90052A1F6 /* ProductsViewController.swift */; };
+		236EAACB20E5C634001D27C3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EAABF20E5C634001D27C3 /* User.swift */; };
+		236EAACC20E5C634001D27C3 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EAAC020E5C634001D27C3 /* AuthToken.swift */; };
+		236EAACD20E5C634001D27C3 /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EAAC120E5C634001D27C3 /* AuthClient.swift */; };
+		236EAACE20E5C634001D27C3 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EAAC320E5C634001D27C3 /* EmailValidator.swift */; };
+		236EAACF20E5C634001D27C3 /* AuthControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EAAC520E5C634001D27C3 /* AuthControllerDelegate.swift */; };
+		236EAAD020E5C634001D27C3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EAAC620E5C634001D27C3 /* SignInViewController.swift */; };
+		236EAAD120E5C634001D27C3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EAAC720E5C634001D27C3 /* RegisterViewController.swift */; };
+		236EAAD220E5C634001D27C3 /* AvoidKeyboardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EAAC920E5C634001D27C3 /* AvoidKeyboardScrollView.swift */; };
+		236EAAD320E5C634001D27C3 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236EAACA20E5C634001D27C3 /* Auth.storyboard */; };
 		2370D9332087AFAF0085FEB1 /* SetNavigationRootSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370D92E2087AFAF0085FEB1 /* SetNavigationRootSegue.swift */; };
 		2370D9342087AFAF0085FEB1 /* UIViewController+LoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370D92F2087AFAF0085FEB1 /* UIViewController+LoadingHUD.swift */; };
 		2370D9352087AFAF0085FEB1 /* LoadingHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2370D9302087AFAF0085FEB1 /* LoadingHUD.xib */; };
@@ -55,6 +64,15 @@
 
 /* Begin PBXFileReference section */
 		230528A720A43AE90052A1F6 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		236EAABF20E5C634001D27C3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		236EAAC020E5C634001D27C3 /* AuthToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
+		236EAAC120E5C634001D27C3 /* AuthClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
+		236EAAC320E5C634001D27C3 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		236EAAC520E5C634001D27C3 /* AuthControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthControllerDelegate.swift; sourceTree = "<group>"; };
+		236EAAC620E5C634001D27C3 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		236EAAC720E5C634001D27C3 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		236EAAC920E5C634001D27C3 /* AvoidKeyboardScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvoidKeyboardScrollView.swift; sourceTree = "<group>"; };
+		236EAACA20E5C634001D27C3 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		2370D92E2087AFAF0085FEB1 /* SetNavigationRootSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetNavigationRootSegue.swift; sourceTree = "<group>"; };
 		2370D92F2087AFAF0085FEB1 /* UIViewController+LoadingHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadingHUD.swift"; sourceTree = "<group>"; };
 		2370D9302087AFAF0085FEB1 /* LoadingHUD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingHUD.xib; sourceTree = "<group>"; };
@@ -114,6 +132,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		236EAABD20E5C634001D27C3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				236EAAC120E5C634001D27C3 /* AuthClient.swift */,
+				236EAAC420E5C634001D27C3 /* Controllers */,
+				236EAABE20E5C634001D27C3 /* Models */,
+				236EAAC220E5C634001D27C3 /* Validators */,
+				236EAAC820E5C634001D27C3 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		236EAABE20E5C634001D27C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				236EAABF20E5C634001D27C3 /* User.swift */,
+				236EAAC020E5C634001D27C3 /* AuthToken.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		236EAAC220E5C634001D27C3 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				236EAAC320E5C634001D27C3 /* EmailValidator.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		236EAAC420E5C634001D27C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				236EAAC520E5C634001D27C3 /* AuthControllerDelegate.swift */,
+				236EAAC620E5C634001D27C3 /* SignInViewController.swift */,
+				236EAAC720E5C634001D27C3 /* RegisterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		236EAAC820E5C634001D27C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				236EAAC920E5C634001D27C3 /* AvoidKeyboardScrollView.swift */,
+				236EAACA20E5C634001D27C3 /* Auth.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2370D92D2087AFAF0085FEB1 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				2370D94F2087B2330085FEB1 /* App */,
+				236EAABD20E5C634001D27C3 /* Authentication */,
 				23FC5CCB2090EB2100984A3B /* Clearning Services */,
 				23FC5CE62090EC8D00984A3B /* Home Info */,
 				2399D45C20CD8D28005C201B /* MulticastClosureDelegate */,
@@ -434,7 +501,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Razeware, LLC";
 				TargetAttributes = {
 					422FEA581E675E8800AFDC41 = {
@@ -467,6 +534,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				236EAAD320E5C634001D27C3 /* Auth.storyboard in Resources */,
 				23FC5CDE2090EB2100984A3B /* CleaningServices.xcassets in Resources */,
 				23FC5CFC2090EC8D00984A3B /* HomeInfoBuilder.storyboard in Resources */,
 				2370D9352087AFAF0085FEB1 /* LoadingHUD.xib in Resources */,
@@ -493,16 +561,21 @@
 				2370D9432087B04D0085FEB1 /* WelcomeViewController.swift in Sources */,
 				2370D94E2087B18D0085FEB1 /* NetworkError.swift in Sources */,
 				2370D9362087AFAF0085FEB1 /* ParentPushSegue.swift in Sources */,
+				236EAAD020E5C634001D27C3 /* SignInViewController.swift in Sources */,
 				23FC5D002090EC8D00984A3B /* BathroomCountViewController.swift in Sources */,
+				236EAACE20E5C634001D27C3 /* EmailValidator.swift in Sources */,
 				23FC5CE22090EB2100984A3B /* ProductDetailsViewController.swift in Sources */,
 				23FC5CFA2090EC8D00984A3B /* HomeInfoBuilder.swift in Sources */,
 				23FC5D032090EC8D00984A3B /* ReviewHomeInfoViewController.swift in Sources */,
+				236EAAD120E5C634001D27C3 /* RegisterViewController.swift in Sources */,
 				23FC5D052090EC8D00984A3B /* KitchenSizeViewController.swift in Sources */,
 				23FC5CE42090EB2100984A3B /* ProductCollectionViewCell.swift in Sources */,
 				23FC5D012090EC8D00984A3B /* BedroomCountViewController.swift in Sources */,
 				23FC5D062090EC8D00984A3B /* HomeInfoViewController.swift in Sources */,
+				236EAACF20E5C634001D27C3 /* AuthControllerDelegate.swift in Sources */,
 				2370D9342087AFAF0085FEB1 /* UIViewController+LoadingHUD.swift in Sources */,
 				2370D94C2087B1860085FEB1 /* Int+HTTPStatusCode.swift in Sources */,
+				236EAAD220E5C634001D27C3 /* AvoidKeyboardScrollView.swift in Sources */,
 				23FC5D042090EC8D00984A3B /* StartHomeInfoViewController.swift in Sources */,
 				230528A820A43AE90052A1F6 /* ProductsViewController.swift in Sources */,
 				2370D9332087AFAF0085FEB1 /* SetNavigationRootSegue.swift in Sources */,
@@ -512,14 +585,17 @@
 				2370D9602087B2330085FEB1 /* MenuTableViewController.swift in Sources */,
 				2370D94B2087B1860085FEB1 /* UIImageView+URL.swift in Sources */,
 				23FC5CFE2090EC8D00984A3B /* HomeSquareFootageViewController.swift in Sources */,
+				236EAACB20E5C634001D27C3 /* User.swift in Sources */,
 				2370D95F2087B2330085FEB1 /* AppDelegate.swift in Sources */,
 				2370D9442087B04D0085FEB1 /* WelcomePageViewController.swift in Sources */,
 				23FC5CDB2090EB2100984A3B /* CleaningServicesBuilder.swift in Sources */,
+				236EAACD20E5C634001D27C3 /* AuthClient.swift in Sources */,
 				23FC5D022090EC8D00984A3B /* OtherRoomCountViewController.swift in Sources */,
 				2370D9482087B17D0085FEB1 /* NetworkClient.swift in Sources */,
 				2399D45E20CD8D28005C201B /* MulticastClosureDelegate.swift in Sources */,
 				23FC5CDC2090EB2100984A3B /* RoomSize.swift in Sources */,
 				23A185B320CA1720008857DB /* ProductViewModel.swift in Sources */,
+				236EAACC20E5C634001D27C3 /* AuthToken.swift in Sources */,
 				23FC5CDD2090EB2100984A3B /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +616,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -547,6 +624,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -595,6 +673,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -602,6 +681,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

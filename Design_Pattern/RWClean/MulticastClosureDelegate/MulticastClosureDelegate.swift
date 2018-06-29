@@ -126,7 +126,6 @@ public class MulticastClosureDelegate<Success, Failure> {
     //  and also the relevent dispatch queue to notify on.
     public func getSuccessTuples( removeAfter: Bool = true ) -> [(Success, DispatchQueue)]{
         
-        
         return getCallBacks(removeAfter: removeAfter).map{ (callBack ) -> (Success, DispatchQueue) in
             return (callBack.success, callBack.queue)
             //  return ($0.success, $0.queue)
