@@ -17,6 +17,9 @@ import Foundation
 
 
 public class SynchronizedValue< ValueType: Any > {
+    //卧槽，使用了 泛型， ValueType: Any ， 不是 字典， 是 元素 继承于 Any
+    
+    
     
     // MARK: - Properties
     private let queue = DispatchQueue(label: "SynchronizedValue(\(type(of: ValueType.self))",  attributes: .concurrent)
@@ -53,10 +56,9 @@ public class SynchronizedValue< ValueType: Any > {
         //      ( inout ValueType ) -> ()
         
         queue.sync(flags: DispatchWorkItemFlags.barrier) {
+            // 来一个 篱笆， 屏障
             closure( &backingValue )
-        }
-        
-        
+        }  
     }
     
     

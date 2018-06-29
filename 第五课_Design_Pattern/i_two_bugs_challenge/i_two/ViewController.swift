@@ -75,14 +75,20 @@ class ViewController: UIViewController {
         
         // 清空， 从新 开始
         
-        for _ in 0..<3 {
+  /*
+         for _ in 0..<3 {
             
             DispatchQueue.global(qos: .background ).async {
                 multicastDelegate.addClosurePair(delegate, success: { }, failure: { })
                 print("count: \(multicastDelegate.count)")
             }
+            //  Note: well technically, since this is dispatched asynchronously, you would expect to see print statements counting from "1 to 3", "all 3s", "1, 3, 3" or even "2, 3, 3."
+            //  Any of these would be acceptable, as each would indicate the closure pairs were all added.
+            //  其实结果， 没问题的， 我可真是一个水货
+            
             
         }
+         */
 /*
          If MulticastClosureDelegate was thread safe, you should see print statements counting from 1 to 3 in the console... however, this always prints 1!
          This confirms that MulticastClosureDelegate is not thread safe.
@@ -95,9 +101,36 @@ class ViewController: UIViewController {
          Any of these would be acceptable, as each would indicate the closure pairs were all added.
          */
 
-        
+        print("\n\n\n\n\n")
+        testMulticastClosureDelegate()
         
     }
+    
+    
+    
+    func testMulticastClosureDelegate(){
+        let delegate = NSObject()
+        let multicastDelegate = MulticastClosureDelegate_raw<Success, Failure>()
+        for _ in 0..<3 {
+            DispatchQueue.global(qos: .background ).async {
+                multicastDelegate.addClosurePair(delegate, success: { }, failure: { })
+                print("count: \(multicastDelegate.count)")
+                
+                /*
+                    count: 1
+                    count: 3
+                    count: 2
+                 
+                    不符合规定
+                */
+                
+            }
+            //  因为是 并发， + QoS 是 .background ， 所以 与
+            //  上面 那个， 有干涉
+        }
+    }
+    
+    
 
     
     

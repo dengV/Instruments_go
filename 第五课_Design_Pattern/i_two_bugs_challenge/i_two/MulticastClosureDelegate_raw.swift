@@ -22,7 +22,7 @@ import Foundation
 
 // 作为 代理 的虚拟机， 统一调度， 注册与 使用
 
-public class MulticastClosureDelegate<Success, Failure> {
+public class MulticastClosureDelegate_raw<Success, Failure> {
     
     // MARK: - Callback
     class CallBack {
@@ -54,7 +54,7 @@ public class MulticastClosureDelegate<Success, Failure> {
     
     
     //  var mapTable = NSMapTable<AnyObject, NSMutableArray>.weakToStrongObjects()
-    internal var mapTable = SynchronizedValue(NSMapTable<AnyObject, NSMutableArray>.weakToStrongObjects())
+    internal var mapTable = NSMapTable<AnyObject, NSMutableArray>.weakToStrongObjects()
     
     
     
@@ -97,12 +97,12 @@ public class MulticastClosureDelegate<Success, Failure> {
         */
         
         
-        mapTable.set { mapTable in
-            let callBack = CallBack(queue: queue, success: success, failure: failure)
-            let array = mapTable.object(forKey: objectKey) ?? NSMutableArray()
-            array.add(callBack)
-            mapTable.setObject(array, forKey: objectKey)
-        }
+       
+        let callBack = CallBack(queue: queue, success: success, failure: failure)
+        let array = mapTable.object(forKey: objectKey) ?? NSMutableArray()
+        array.add(callBack)
+        mapTable.setObject(array, forKey: objectKey)
+        
         
     } // 但从这个方法， 没必要用 NSMutableArray
     //  Next, we will add a method , to actually register closures using this callback.
@@ -144,23 +144,24 @@ public class MulticastClosureDelegate<Success, Failure> {
  
  */
         var callBacks: [CallBack]!
-        mapTable.set { mapTable in
+        
             // 在外面 加了一层保护
             
-            let objects = mapTable.keyEnumerator().allObjects as [AnyObject]
-            callBacks = objects.reduce( [] ) { (combinedArray, objectKey) in
-                let array = mapTable.object(forKey: objectKey)! as! [CallBack]
-                return combinedArray + array
-            }
-            
-            guard removeAfter else {  return  }
-            
-            // here we pass removeAfter , to clean up the callbacks by removing them from the map table.
-            objects.forEach {
-                mapTable.removeObject(forKey: $0)
-                // 为什么不能， 一下子， remove All Objects?
-            }
+        let objects = mapTable.keyEnumerator().allObjects as [AnyObject]
+        callBacks = objects.reduce( [] ) { (combinedArray, objectKey) in
+            let array = mapTable.object(forKey: objectKey)! as! [CallBack]
+            return combinedArray + array
         }
+        
+        guard removeAfter else {  return callBacks }
+        
+        // here we pass removeAfter , to clean up the callbacks by removing them from the map table.
+        objects.forEach {
+            mapTable.removeObject(forKey: $0)
+            // 为什么不能， 一下子， remove All Objects?
+        }
+        
+        
         
         return callBacks
     }// 把所有的 回调 callbacks , 一次性 取出来
@@ -216,15 +217,6 @@ public class MulticastClosureDelegate<Success, Failure> {
 }
 
 
-
-
-
-// MARK: - Testing
-typealias Success = () -> Void
-typealias Failure = () -> Void
-
-
-// 尼玛的， 泛型， 还能 这么用 啊
 
 
 

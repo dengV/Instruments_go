@@ -16,6 +16,7 @@
 		2355C2A720D3A70F002AB5A3 /* i_twoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2355C2A620D3A70F002AB5A3 /* i_twoUITests.swift */; };
 		2355C2B520D3A739002AB5A3 /* MulticastClosureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2355C2B420D3A739002AB5A3 /* MulticastClosureDelegate.swift */; };
 		2355C2B720D3B1FA002AB5A3 /* SynchronizedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2355C2B620D3B1FA002AB5A3 /* SynchronizedValue.swift */; };
+		236EAABC20E5C0A6001D27C3 /* MulticastClosureDelegate_raw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EAABB20E5C0A6001D27C3 /* MulticastClosureDelegate_raw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2355C2A820D3A70F002AB5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2355C2B420D3A739002AB5A3 /* MulticastClosureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastClosureDelegate.swift; sourceTree = "<group>"; };
 		2355C2B620D3B1FA002AB5A3 /* SynchronizedValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedValue.swift; sourceTree = "<group>"; };
+		236EAABB20E5C0A6001D27C3 /* MulticastClosureDelegate_raw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastClosureDelegate_raw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		2355C28520D3A70F002AB5A3 /* i_two */ = {
 			isa = PBXGroup;
 			children = (
+				236EAABB20E5C0A6001D27C3 /* MulticastClosureDelegate_raw.swift */,
 				2355C2B420D3A739002AB5A3 /* MulticastClosureDelegate.swift */,
 				2355C28620D3A70F002AB5A3 /* AppDelegate.swift */,
 				2355C28820D3A70F002AB5A3 /* ViewController.swift */,
@@ -267,6 +270,7 @@
 			files = (
 				2355C28920D3A70F002AB5A3 /* ViewController.swift in Sources */,
 				2355C28720D3A70F002AB5A3 /* AppDelegate.swift in Sources */,
+				236EAABC20E5C0A6001D27C3 /* MulticastClosureDelegate_raw.swift in Sources */,
 				2355C2B520D3A739002AB5A3 /* MulticastClosureDelegate.swift in Sources */,
 				2355C2B720D3B1FA002AB5A3 /* SynchronizedValue.swift in Sources */,
 			);
