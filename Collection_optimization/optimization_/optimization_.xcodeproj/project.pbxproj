@@ -12,6 +12,7 @@
 		234A344220EC56D300D2D1DE /* exeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234A344120EC56D300D2D1DE /* exeOne.swift */; };
 		23D8EB4B20EE0070008F9BAB /* Sorted_array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D8EB4A20EE0070008F9BAB /* Sorted_array.swift */; };
 		23D8EB4D20EE0471008F9BAB /* Sorted_array_simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D8EB4C20EE0471008F9BAB /* Sorted_array_simple.swift */; };
+		23D8EB4F20EE0AED008F9BAB /* Sorted_array_progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D8EB4E20EE0AED008F9BAB /* Sorted_array_progress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		234A344120EC56D300D2D1DE /* exeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exeOne.swift; sourceTree = "<group>"; };
 		23D8EB4A20EE0070008F9BAB /* Sorted_array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorted_array.swift; sourceTree = "<group>"; };
 		23D8EB4C20EE0471008F9BAB /* Sorted_array_simple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorted_array_simple.swift; sourceTree = "<group>"; };
+		23D8EB4E20EE0AED008F9BAB /* Sorted_array_progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorted_array_progress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				234A343E20EC55F500D2D1DE /* one.swift */,
 				23D8EB4A20EE0070008F9BAB /* Sorted_array.swift */,
 				23D8EB4C20EE0471008F9BAB /* Sorted_array_simple.swift */,
+				23D8EB4E20EE0AED008F9BAB /* Sorted_array_progress.swift */,
 			);
 			path = CodeOne;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				234A343F20EC55F500D2D1DE /* one.swift in Sources */,
 				234A343720EC541C00D2D1DE /* main.swift in Sources */,
 				234A344220EC56D300D2D1DE /* exeOne.swift in Sources */,
+				23D8EB4F20EE0AED008F9BAB /* Sorted_array_progress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

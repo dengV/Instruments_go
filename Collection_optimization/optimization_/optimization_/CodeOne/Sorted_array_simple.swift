@@ -56,9 +56,9 @@ public struct SortedArray_simple<Element: Comparable> : SortedSet,  RandomAccess
     }
     
     
-    public func forEach(_ body: (Element) throws -> Void) rethrows {
-        try storage.forEach(body)
-    }
+//    public func forEach(_ body: (Element) throws -> Void) rethrows {
+//        try storage.forEach(body)
+//    }
    
 }
 
