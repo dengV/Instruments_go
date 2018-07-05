@@ -23,6 +23,7 @@ internal class SignInViewController: UIViewController {
     return navigationController
   }
   
+    
   // MARK: - Actions
   @IBAction func cancelButtonPressed(_ sender: Any) {
     delegate.signInCancelled(on: self)
@@ -32,6 +33,8 @@ internal class SignInViewController: UIViewController {
     attemptSignIn()
   }
   
+    
+    
   internal func attemptSignIn() {
     guard let email = emailTextField.text, !email.isEmpty,
       let password = passwordTextField.text, !password.isEmpty else {
@@ -46,6 +49,7 @@ internal class SignInViewController: UIViewController {
     delegate.signInRequested(on: self, email: email, password: password, failure: handleError())
   }
   
+    
   private func showMissingInputAlert() {
     let controller = UIAlertController(title: NSLocalizedString("Missing Email or Password", comment: ""),
                                        message: NSLocalizedString("Please check your inputs and try again", comment: ""),
@@ -57,6 +61,7 @@ internal class SignInViewController: UIViewController {
     present(controller, animated: true)
   }
   
+    
   private func handleError() -> (SignInError) -> Void {
     return { [weak self] in
       guard let strongSelf = self else { return }

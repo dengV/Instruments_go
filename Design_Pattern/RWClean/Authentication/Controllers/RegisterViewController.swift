@@ -151,10 +151,14 @@ extension RegisterViewController: UITextFieldDelegate {
     
     return false
   }
+    
+    
   
   func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
     guard textField == phoneNumberTextField else { return true }
     let validCharacters = "0123456789"
     return string.filter(validCharacters.contains).count == string.count
-  }
+    
+    
+  }// 这行代码， 感觉也很吊 的 样子
 }

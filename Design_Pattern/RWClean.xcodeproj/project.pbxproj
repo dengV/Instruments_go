@@ -17,6 +17,7 @@
 		236EAAD120E5C634001D27C3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EAAC720E5C634001D27C3 /* RegisterViewController.swift */; };
 		236EAAD220E5C634001D27C3 /* AvoidKeyboardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EAAC920E5C634001D27C3 /* AvoidKeyboardScrollView.swift */; };
 		236EAAD320E5C634001D27C3 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236EAACA20E5C634001D27C3 /* Auth.storyboard */; };
+		236EAAD520E5FC6F001D27C3 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EAAD420E5FC6F001D27C3 /* UserViewController.swift */; };
 		2370D9332087AFAF0085FEB1 /* SetNavigationRootSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370D92E2087AFAF0085FEB1 /* SetNavigationRootSegue.swift */; };
 		2370D9342087AFAF0085FEB1 /* UIViewController+LoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370D92F2087AFAF0085FEB1 /* UIViewController+LoadingHUD.swift */; };
 		2370D9352087AFAF0085FEB1 /* LoadingHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2370D9302087AFAF0085FEB1 /* LoadingHUD.xib */; };
@@ -73,6 +74,7 @@
 		236EAAC720E5C634001D27C3 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		236EAAC920E5C634001D27C3 /* AvoidKeyboardScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvoidKeyboardScrollView.swift; sourceTree = "<group>"; };
 		236EAACA20E5C634001D27C3 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		236EAAD420E5FC6F001D27C3 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		2370D92E2087AFAF0085FEB1 /* SetNavigationRootSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetNavigationRootSegue.swift; sourceTree = "<group>"; };
 		2370D92F2087AFAF0085FEB1 /* UIViewController+LoadingHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadingHUD.swift"; sourceTree = "<group>"; };
 		2370D9302087AFAF0085FEB1 /* LoadingHUD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingHUD.xib; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 		2370D9572087B2330085FEB1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				236EAAD420E5FC6F001D27C3 /* UserViewController.swift */,
 				2370D9582087B2330085FEB1 /* MenuTableViewController.swift */,
 			);
 			path = Controllers;
@@ -563,6 +566,7 @@
 				2370D9362087AFAF0085FEB1 /* ParentPushSegue.swift in Sources */,
 				236EAAD020E5C634001D27C3 /* SignInViewController.swift in Sources */,
 				23FC5D002090EC8D00984A3B /* BathroomCountViewController.swift in Sources */,
+				236EAAD520E5FC6F001D27C3 /* UserViewController.swift in Sources */,
 				236EAACE20E5C634001D27C3 /* EmailValidator.swift in Sources */,
 				23FC5CE22090EB2100984A3B /* ProductDetailsViewController.swift in Sources */,
 				23FC5CFA2090EC8D00984A3B /* HomeInfoBuilder.swift in Sources */,

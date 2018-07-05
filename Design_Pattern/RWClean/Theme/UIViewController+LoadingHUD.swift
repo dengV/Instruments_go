@@ -2,7 +2,7 @@
 
 import UIKit
 
-
+// wocao , 有意思
 extension UIViewController {
   
   private struct AssociationKey {
@@ -16,6 +16,8 @@ extension UIViewController {
       objc_setAssociatedObject(self, &AssociationKey.loadingHUD, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     }
   }
+    
+    
   
   public func showLoadingHUD(_ animated: Bool = true) {
     
@@ -36,8 +38,12 @@ extension UIViewController {
     UIView.animate(withDuration: 0.33) {
       loadingHUD.alpha = 1.0
     }
+    
+    // UIActivityIndicatorView 的 alpha 变换 效果， 好神奇
   }
   
+    
+    
   public func dismissLoadingHUD(_ animated: Bool = true) {
     
     guard let loadingHUD = loadingHUD else { return }
