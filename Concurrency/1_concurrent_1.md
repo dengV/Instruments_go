@@ -13,6 +13,9 @@ A private queue is serial by default,
 
 串行队列 对于 共享的 资源， 非常友好。
 
+
+## 默认就是保护可共享资源的串行队列
+
 <hr>
 
 
@@ -120,6 +123,8 @@ synchronizing remote servers, backups,
 
 
 <hr>
+
+backups, （ 备份文件 ）
 <hr>
 
 

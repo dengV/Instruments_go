@@ -109,7 +109,19 @@ extension SortedArray_Progress: RandomAccessCollection{
 
 
 
+// 关键 是 这条协议
 
+// RandomAccessCollection
+
+// 实现了 这条协议 的 方法 ，就不用实现
+// BidirectionalCollection 双向 集合类型 的 协议方法
+// index(before:) method
+
+
+
+// Swift 的 协议 满足条件， 自动推导， 自动 infer
+// 组合 起来，
+// 感觉 挺好的
 
 
 

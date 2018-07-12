@@ -44,7 +44,7 @@ public class SynchronizedValue< ValueType: Any > {
         var value: ValueType!
         queue.sync {
             value = backingValue
-        }
+        }// 只有这个队列，才可以获取这个值
         return value
     }
     //   queue.sync { ,  线程 安全 的 同步机制
@@ -58,7 +58,7 @@ public class SynchronizedValue< ValueType: Any > {
         queue.sync(flags: DispatchWorkItemFlags.barrier) {
             // 来一个 篱笆， 屏障
             closure( &backingValue )
-        }  
+        }  // 只有这个队列，才可以改这个值
     }
     
     
