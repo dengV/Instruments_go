@@ -17,6 +17,10 @@
 		23B5958320F8565100630D0C /* GradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B5957D20F8565000630D0C /* GradientGenerator.swift */; };
 		23B5958420F8565100630D0C /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B5957E20F8565000630D0C /* Duration.swift */; };
 		23B5958520F8565100630D0C /* dark_road_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23B5958020F8565000630D0C /* dark_road_small.jpg */; };
+		23DAD3BC20F88B790044D5B3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DAD3BB20F88B790044D5B3 /* TableViewController.swift */; };
+		23DAD3C020F88C090044D5B3 /* train_night.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23DAD3BD20F88C090044D5B3 /* train_night.jpg */; };
+		23DAD3C120F88C090044D5B3 /* train_day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23DAD3BE20F88C090044D5B3 /* train_day.jpg */; };
+		23DAD3C220F88C090044D5B3 /* train_dusk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23DAD3BF20F88C090044D5B3 /* train_dusk.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		23B5957D20F8565000630D0C /* GradientGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientGenerator.swift; sourceTree = "<group>"; };
 		23B5957E20F8565000630D0C /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
 		23B5958020F8565000630D0C /* dark_road_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dark_road_small.jpg; sourceTree = "<group>"; };
+		23DAD3BB20F88B790044D5B3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		23DAD3BD20F88C090044D5B3 /* train_night.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = train_night.jpg; sourceTree = "<group>"; };
+		23DAD3BE20F88C090044D5B3 /* train_day.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = train_day.jpg; sourceTree = "<group>"; };
+		23DAD3BF20F88C090044D5B3 /* train_dusk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = train_dusk.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 				23B5956E20F855F600630D0C /* Assets.xcassets */,
 				23B5957020F855F600630D0C /* LaunchScreen.storyboard */,
 				23B5957320F855F600630D0C /* Info.plist */,
+				23DAD3BB20F88B790044D5B3 /* TableViewController.swift */,
 			);
 			path = Async_2_TiltShift;
 			sourceTree = "<group>";
@@ -98,6 +107,9 @@
 		23B5957F20F8565000630D0C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				23DAD3BE20F88C090044D5B3 /* train_day.jpg */,
+				23DAD3BF20F88C090044D5B3 /* train_dusk.jpg */,
+				23DAD3BD20F88C090044D5B3 /* train_night.jpg */,
 				23B5958020F8565000630D0C /* dark_road_small.jpg */,
 			);
 			path = Resources;
@@ -161,10 +173,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DAD3C020F88C090044D5B3 /* train_night.jpg in Resources */,
 				23B5957220F855F600630D0C /* LaunchScreen.storyboard in Resources */,
+				23DAD3C220F88C090044D5B3 /* train_dusk.jpg in Resources */,
 				23B5958520F8565100630D0C /* dark_road_small.jpg in Resources */,
 				23B5956F20F855F600630D0C /* Assets.xcassets in Resources */,
 				23B5956D20F855F400630D0C /* Main.storyboard in Resources */,
+				23DAD3C120F88C090044D5B3 /* train_day.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23B5958120F8565100630D0C /* TiltShift.swift in Sources */,
+				23DAD3BC20F88B790044D5B3 /* TableViewController.swift in Sources */,
 				23B5958320F8565100630D0C /* GradientGenerator.swift in Sources */,
 				23B5956A20F855F400630D0C /* ViewController.swift in Sources */,
 				23B5958420F8565100630D0C /* Duration.swift in Sources */,
