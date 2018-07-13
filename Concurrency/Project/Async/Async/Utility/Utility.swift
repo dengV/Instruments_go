@@ -22,3 +22,4 @@ public func duration(_ block: () -> ()) -> TimeInterval{
     
     
 }
+// 这就是一个 匿名 函数

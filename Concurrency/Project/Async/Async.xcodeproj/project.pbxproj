@@ -15,6 +15,8 @@
 		236FB0BB20F7409E00675E1C /* AsyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236FB0BA20F7409E00675E1C /* AsyncTests.swift */; };
 		236FB0C620F7409E00675E1C /* AsyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236FB0C520F7409E00675E1C /* AsyncUITests.swift */; };
 		236FB0D520F747AF00675E1C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236FB0D420F747AF00675E1C /* Utility.swift */; };
+		23B5955820F8320400630D0C /* Concurrency_one.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B5955720F8320400630D0C /* Concurrency_one.swift */; };
+		23B5955A20F835E800630D0C /* Concurrency_two.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B5955920F835E800630D0C /* Concurrency_two.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		236FB0C520F7409E00675E1C /* AsyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncUITests.swift; sourceTree = "<group>"; };
 		236FB0C720F7409E00675E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		236FB0D420F747AF00675E1C /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		23B5955720F8320400630D0C /* Concurrency_one.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrency_one.swift; sourceTree = "<group>"; };
+		23B5955920F835E800630D0C /* Concurrency_two.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrency_two.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		236FB0A420F7409C00675E1C /* Async */ = {
 			isa = PBXGroup;
 			children = (
+				23B5955620F831EA00630D0C /* SourceCode */,
 				236FB0D320F747A000675E1C /* Utility */,
 				236FB0A520F7409C00675E1C /* AppDelegate.swift */,
 				236FB0A720F7409C00675E1C /* ViewController.swift */,
@@ -134,6 +139,15 @@
 				236FB0D420F747AF00675E1C /* Utility.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		23B5955620F831EA00630D0C /* SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				23B5955720F8320400630D0C /* Concurrency_one.swift */,
+				23B5955920F835E800630D0C /* Concurrency_two.swift */,
+			);
+			path = SourceCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				236FB0A820F7409C00675E1C /* ViewController.swift in Sources */,
+				23B5955A20F835E800630D0C /* Concurrency_two.swift in Sources */,
 				236FB0A620F7409C00675E1C /* AppDelegate.swift in Sources */,
 				236FB0D520F747AF00675E1C /* Utility.swift in Sources */,
+				23B5955820F8320400630D0C /* Concurrency_one.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
