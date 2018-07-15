@@ -1,51 +1,42 @@
 //
-//  ViewController.swift
+//  ViewController+SimpleUse.swift
 //  SimpleUseCases
 //
-//  Created by dengjiangzhou on 2018/7/13.
+//  Created by dengjiangzhou on 2018/7/15.
 //  Copyright © 2018年 dengjiangzhou. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class ViewController: UIViewController {
 
-    let userQueue = DispatchQueue.global(qos: .userInitiated)
-    let defaultQueue = DispatchQueue.main
+
+extension ViewController{
     
-    let privateQueue = DispatchQueue(label: "com.deng.yi.lang", qos: .default, attributes: .concurrent )
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        print("👌")
+    
+    func simple_use_cases(){
         
-   /*     asyncAdd((2, 2), runQueue: userQueue, completionQueue: defaultQueue) { (result: Int, err: Error?) in
-            print(result)
-        }
-        */
+        /*     asyncAdd((2, 2), runQueue: userQueue, completionQueue: defaultQueue) { (result: Int, err: Error?) in
+         print(result)
+         }
+         */
         
         
         
-    /*    privateQueue.async {
-            let tasks = Code_ToLive()
-            
-            let out0 = tasks.task0()
-            let out1 = tasks.task1(inString: out0)
-            let out2 = tasks.task2(inString: out1)
-            print(out2)
-        }*/
-        
-        
-        
-        
+        /*    privateQueue.async {
+         let tasks = Code_ToLive()
+         
+         let out0 = tasks.task0()
+         let out1 = tasks.task1(inString: out0)
+         let out2 = tasks.task2(inString: out1)
+         print(out2)
+         }*/
         
         code_random_sleep()
         
     }
     
-    // Allow for random sleep times
-    let sleepMax: UInt32 = 5
+    
     
     
     func randomTask(_ value: Int) {
@@ -124,12 +115,9 @@ class ViewController: UIViewController {
         }
         // Asynchronous functions should always allow for errors,
         // so add an optional error argument to the completion handler
-        
-        
-        
     }
     
-    
+
     
     
     
@@ -138,11 +126,18 @@ class ViewController: UIViewController {
         return input.0 + input.1
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
-
