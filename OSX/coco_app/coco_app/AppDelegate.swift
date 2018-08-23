@@ -18,6 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var resetTimerMenuItem: NSMenuItem!
     
     
+    @IBOutlet weak var deletePDFBookmarksMenuItem: NSMenuItem!
     
     
 

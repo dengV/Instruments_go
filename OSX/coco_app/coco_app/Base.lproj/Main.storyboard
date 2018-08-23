@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ofj-0z-tLN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
+        <!--Window Controller-->
+        <scene sceneID="nix-tU-0Oo">
+            <objects>
+                <windowController id="GRb-o5-tCd" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="paf-K1-wM7">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="249" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <connections>
+                            <outlet property="delegate" destination="GRb-o5-tCd" id="f3h-5z-gXY"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="idE-Hf-gKd" kind="relationship" relationship="window.shadowedContentViewController" id="MPO-Tc-3j4"/>
+                    </connections>
+                </windowController>
+                <customObject id="50o-7Z-5Nn" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-815" y="348"/>
+        </scene>
+        <!--PDF Handler-->
+        <scene sceneID="6bE-eD-7st">
+            <objects>
+                <viewController title="PDF Handler" id="idE-Hf-gKd" customClass="PDFHandlerVIewController" customModule="coco_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="hfN-x6-llb">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="CBX-zn-ehc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1330" y="1019"/>
+        </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
             <objects>
@@ -107,6 +141,18 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="PDF Handler" id="BBt-eI-gV7">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="PDF Handler" id="DOP-Eh-6SI">
+                                    <items>
+                                        <menuItem title="Delete All BookMarks" keyEquivalent="d" id="FLb-vZ-eOe">
+                                            <connections>
+                                                <action selector="deleteAllBookmarks:" target="Ady-hI-5gd" id="2xu-oW-jGg"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
                             <menuItem title="帮助" id="wpr-3q-Mcd">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="帮助" systemMenu="help" id="F2S-fz-NVQ">
@@ -127,6 +173,7 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="coco_app" customModuleProvider="target">
                     <connections>
+                        <outlet property="deletePDFBookmarksMenuItem" destination="FLb-vZ-eOe" id="ntD-G6-cOV"/>
                         <outlet property="resetTimerMenuItem" destination="X56-Ak-4Po" id="EIt-D2-a2W"/>
                         <outlet property="startTimerMenuItem" destination="oaI-VU-uDU" id="fQz-MO-eIT"/>
                         <outlet property="stopTimerMenuItem" destination="jsp-I7-Kbp" id="K4H-Eo-qDx"/>
@@ -135,7 +182,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="240" y="-30"/>
+            <point key="canvasLocation" x="497" y="-660"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="rW8-b6-JD7">
@@ -286,6 +333,109 @@ DQ
             <point key="canvasLocation" x="1204" y="302"/>
         </scene>
         <!--Window Controller-->
+        <scene sceneID="lCP-8X-R5e">
+            <objects>
+                <windowController id="Ofj-0z-tLN" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="s3r-1r-8VV">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="249" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <connections>
+                            <outlet property="delegate" destination="Ofj-0z-tLN" id="wfD-vl-2yx"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="Z0n-O7-Bzs" kind="relationship" relationship="window.shadowedContentViewController" id="8nD-Po-RAg"/>
+                    </connections>
+                </windowController>
+                <customObject id="Jhq-wu-Y3e" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-781" y="-167"/>
+        </scene>
+        <!--MainV Iew Controller-->
+        <scene sceneID="ujs-sK-3LA">
+            <objects>
+                <viewController id="Z0n-O7-Bzs" customClass="MainVIewController" customModule="coco_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Ixo-fe-4rg">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uMd-i1-MTV">
+                                <rect key="frame" x="90" y="113" width="300" height="45"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="faz-fh-LYg">
+                                        <rect key="frame" x="-6" y="5" width="104" height="32"/>
+                                        <buttonCell key="cell" type="push" title="EggTime" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZyT-TM-7Qb">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <segue destination="B8D-0N-5wS" kind="show" id="uKJ-Pe-r0y"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fzd-3U-kpU">
+                                        <rect key="frame" x="94" y="5" width="113" height="32"/>
+                                        <buttonCell key="cell" type="push" title="PDFHandler" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4Yq-cW-T5o">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <segue destination="GRb-o5-tCd" kind="show" id="tVN-MU-sRP"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bFA-wH-DiD">
+                                        <rect key="frame" x="203" y="5" width="103" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lAf-ey-yiY">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="XJx-0I-Lt5"/>
+                                    <constraint firstAttribute="width" constant="300" id="fzT-ie-yVJ"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NdT-XE-23y">
+                                <rect key="frame" x="98" y="165" width="37" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="aSQ-Wo-tnv"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="bP3-dp-nPg">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="uMd-i1-MTV" firstAttribute="centerY" secondItem="Ixo-fe-4rg" secondAttribute="centerY" id="W28-Hv-ITi"/>
+                            <constraint firstItem="NdT-XE-23y" firstAttribute="centerY" secondItem="Ixo-fe-4rg" secondAttribute="centerY" constant="-80" id="WGX-d7-kf7"/>
+                            <constraint firstItem="NdT-XE-23y" firstAttribute="leading" secondItem="Ixo-fe-4rg" secondAttribute="leading" constant="100" id="Wl9-Et-M0J"/>
+                            <constraint firstItem="uMd-i1-MTV" firstAttribute="centerX" secondItem="Ixo-fe-4rg" secondAttribute="centerX" id="eXv-SQ-w4r"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NdT-XE-23y" secondAttribute="trailing" constant="100" id="uh8-2Y-DY0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="truncatingLabel" destination="NdT-XE-23y" id="Fsn-no-s3b"/>
+                    </connections>
+                </viewController>
+                <customObject id="ghb-NE-ueJ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74" y="-192"/>
+        </scene>
+        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
@@ -384,7 +534,7 @@ DQ
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295.5" y="1000"/>
+            <point key="canvasLocation" x="268" y="1133"/>
         </scene>
         <!--Scene One View Controller-->
         <scene sceneID="ugS-H8-Pkn">

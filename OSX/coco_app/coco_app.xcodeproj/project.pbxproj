@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		230447A920B52E9E00FDCE1C /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230447A820B52E9E00FDCE1C /* Preferences.swift */; };
 		230447AC20B54F3900FDCE1C /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230447AB20B54F3900FDCE1C /* ding.mp3 */; };
+		232F7F662109507100F7A35C /* PDFHandlerVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F7F652109507100F7A35C /* PDFHandlerVIewController.swift */; };
+		232F7F6821096AEE00F7A35C /* MainVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F7F6721096AEE00F7A35C /* MainVIewController.swift */; };
 		2383A3A720B093CD00313750 /* coco_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383A3A620B093CD00313750 /* coco_appTests.swift */; };
 		2383A3B220B093CD00313750 /* coco_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383A3B120B093CD00313750 /* coco_appUITests.swift */; };
 		23B1B77E20B40DBB00A62EAF /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1B77220B40DBA00A62EAF /* PreferenceViewController.swift */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		230447A820B52E9E00FDCE1C /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		230447AB20B54F3900FDCE1C /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
+		232F7F652109507100F7A35C /* PDFHandlerVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFHandlerVIewController.swift; sourceTree = "<group>"; };
+		232F7F6721096AEE00F7A35C /* MainVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVIewController.swift; sourceTree = "<group>"; };
 		2383A39020B093CD00313750 /* coco_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coco_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2383A3A220B093CD00313750 /* coco_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coco_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2383A3A620B093CD00313750 /* coco_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coco_appTests.swift; sourceTree = "<group>"; };
@@ -91,6 +95,22 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		232F7F632109502600F7A35C /* PDFModule */ = {
+			isa = PBXGroup;
+			children = (
+				232F7F642109504600F7A35C /* Controller */,
+			);
+			path = PDFModule;
+			sourceTree = "<group>";
+		};
+		232F7F642109504600F7A35C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				232F7F652109507100F7A35C /* PDFHandlerVIewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2383A38720B093CD00313750 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +134,7 @@
 		2383A39220B093CD00313750 /* coco_app */ = {
 			isa = PBXGroup;
 			children = (
+				232F7F632109502600F7A35C /* PDFModule */,
 				230447AA20B54F3900FDCE1C /* Resource */,
 				23B1B78520B40F8B00A62EAF /* Model */,
 				23B1B77D20B40DBB00A62EAF /* AppDelegate.swift */,
@@ -122,6 +143,7 @@
 				23B1B77720B40DBB00A62EAF /* Controllers_one */,
 				23B1B77120B40DBA00A62EAF /* Controllers_two */,
 				23B1B77A20B40DBB00A62EAF /* supporting_files */,
+				232F7F6721096AEE00F7A35C /* MainVIewController.swift */,
 			);
 			path = coco_app;
 			sourceTree = "<group>";
@@ -250,7 +272,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = dengjiangzhou;
 				TargetAttributes = {
 					2383A38F20B093CD00313750 = {
@@ -325,9 +347,11 @@
 				23B1B78420B40DBB00A62EAF /* AppDelegate.swift in Sources */,
 				23B1B78120B40DBB00A62EAF /* ViewController.swift in Sources */,
 				230447A920B52E9E00FDCE1C /* Preferences.swift in Sources */,
+				232F7F662109507100F7A35C /* PDFHandlerVIewController.swift in Sources */,
 				23B1B78720B40F9600A62EAF /* EggTimer.swift in Sources */,
 				23B1B77F20B40DBB00A62EAF /* SceneOneViewController.swift in Sources */,
 				23B1B77E20B40DBB00A62EAF /* PreferenceViewController.swift in Sources */,
+				232F7F6821096AEE00F7A35C /* MainVIewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +412,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -395,6 +420,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -445,6 +471,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -452,6 +479,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
