@@ -54,13 +54,35 @@ class CatFeedViewController: UIViewController, UITableViewDataSource, UITableVie
         
         motionManager.startDeviceMotionUpdates(to: .main, withHandler:{ deviceMotion, error in
             guard let deviceMotion = deviceMotion else { return }
+            
+            
+            
+            
+            
+            //
+            
             guard abs( deviceMotion.rotationRate.y - self.lastY ) > 0.1 else {   return  }       // 这行是 新加的,   // 不满足条件， just bail
+           /* */
+            //
+            
+            
+            
+            
             let xRotationRate = CGFloat(deviceMotion.rotationRate.x)
             let yRotationRate = CGFloat(deviceMotion.rotationRate.y)
             let zRotationRate = CGFloat(deviceMotion.rotationRate.z)
             
             self.lastY = deviceMotion.rotationRate.y
-         //   print("y \(yRotationRate) and x \(xRotationRate) and z\(zRotationRate)")              // this is all allocating arrays and memory on the heap.
+            
+            
+            
+            
+            //
+          //  print("y \(yRotationRate) and x \(xRotationRate) and z\(zRotationRate)")
+            
+         //
+            
+            // this is all allocating arrays and memory on the heap.
             
             if abs(yRotationRate) > (abs(xRotationRate) + abs(zRotationRate)) {
                 for cell in self.tableView.visibleCells as! [CatPhotoTableViewCell] {

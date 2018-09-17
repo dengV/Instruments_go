@@ -1,8 +1,0 @@
-boomBangs xs = [if x < 10 then "BOOM" else "BANG!" | x <- xs, odd x]
-
-
-
-
-
-
-# putStrLn "邓， Come On"
