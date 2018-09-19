@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "PatPal")
         
+        
+        // need to load up our data model.
+        
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             
             print(storeDescription)
@@ -34,11 +37,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func saveContext(){
         let context = persistentContainer.viewContext
+        // first, need to get a reference to my context, form `persistentContainer`
         
         if context.hasChanges{
+            //    see if there has been any changes in this context.
+            
             
             do{
                 try context.save()
+                // 有变化， 就尝试保存
             }
             catch{
                 fatalError("Unresolved error \(error.localizedDescription)")
@@ -51,6 +58,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }   // func saveContext()
 
+    
+    
+    
+    
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.

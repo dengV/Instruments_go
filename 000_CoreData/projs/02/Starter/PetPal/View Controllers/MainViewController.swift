@@ -13,12 +13,12 @@ class MainViewController: UIViewController {
     
 	private var selected:IndexPath!
 	private var picker = UIImagePickerController()
-	private var images = [String:UIImage]()
+	
     private let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     
     private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
+    //  get a reference to our context 数据存储上下文
     
     
     
@@ -36,12 +36,22 @@ class MainViewController: UIViewController {
         
         do{
             friends = try context.fetch(Friend.fetchRequest())
+            // 上下文取数据，
+            // this takes a fetch request.
             
+            
+            
+            //  Friend.fetchRequest()
+            //  this is going to return a preconfigured fetch request for us
+            //  返回一个 预先配置好的 获取数据 请求
         }
         catch{
             fatalError("Could not fetch \(error.localizedDescription)")
         }   //  catch
         
+        
+        
+        showEditButton()
     }
     
     
@@ -85,8 +95,21 @@ class MainViewController: UIViewController {
         let friend = Friend(entity: Friend.entity(), insertInto: context)
         friend.name = data.name
         friend.address = data.address
+        //  this does not save anything yet, 上面的代码
         
+        //  we have to manually save it ourselves.
+        //  必须手动
+        
+        
+        friend.dob = data.dob
+        friend.eyeColor = data.eyeColor
+        // Color , 也可以存 r, g, b
+
         appDelegate.saveContext()
+        
+        //  直接存对象
+        
+        //  然后改 UI
 		friends.append(friend)
 		let index = IndexPath(row:friends.count - 1, section:0)
 		collectionView?.insertItems(at: [index])
@@ -102,6 +125,9 @@ class MainViewController: UIViewController {
 		}
 	}
 }
+
+
+
 
 // Collection View Delegates
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -123,9 +149,23 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
 		cell.nameLabel.text = friend.name!
         
         cell.addressLabel.text = friend.address
-        if let image = images[friend.name!] {
-			cell.pictureImageView.image = image
-		}
+        
+        
+        
+        cell.ageLabel.text = "Age: \(friend.age)"
+        cell.eyeColorView.backgroundColor = friend.eyeColor as? UIColor
+        //  做一个 cast,
+        //  convert NSObject to UIColor
+        
+        if let data = friend.photo as Data?{
+            cell.pictureImageView.image = UIImage(data: data)
+        }
+        else{
+            cell.pictureImageView.image = UIImage(named: "person-placeholder")
+        }
+        
+        
+        
 		return cell
 	}
 	
@@ -134,6 +174,9 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		if isEditing {
+            
+            // isEditing, 这个属性好
+            
 			selected = indexPath
 			self.navigationController?.present(picker, animated: true, completion: nil)
 		} else {
@@ -187,7 +230,12 @@ extension MainViewController: UIImagePickerControllerDelegate, UINavigationContr
 	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
 		let image = info[UIImagePickerControllerOriginalImage] as! UIImage
 		let friend = isFiltered ? filtered[selected.row] : friends[selected.row]
-		images[friend.name!] = image
+		
+        
+        friend.photo = UIImagePNGRepresentation(image) as NSData?
+        appDelegate.saveContext()
+        
+        
 		collectionView?.reloadItems(at: [selected])
 		picker.dismiss(animated: true, completion: nil)
 	}
