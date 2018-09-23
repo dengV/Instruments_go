@@ -1,0 +1,15 @@
+
+整体思路
+demo包括三大部分，分别是资源加载、音频播放、视频播放。
+
+资源加载：是用AVURLAsset加载资源文件，再创建资源读取器AVAssetReader，然后附加音频读取接口mReaderAudioTrackOutput和视频读取接口mReaderVideoTrackOutput到资源读取器。
+音频播放 ：从音频读取接口mReaderAudioTrackOutput加载音频信息得到CMSampleBuffer，用方法CMSampleBufferGetAudioBufferListWithRetainedBlockBuffer把音频数据转成AudioBufferList格式，再采用AudioUnit播放；
+视频播放：从视频读取接口mReaderVideoTrackOutput加载视频信息得到CMSampleBuffer，用方法CMSampleBufferGetImageBuffer把视频数据转成CVPixelBufferRef格式，再用OpenGL ES绘制图像；
+
+
+<hr>
+
+作者：落影loyinglin
+
+链接：https://www.jianshu.com/p/307533e5b5f5
+=

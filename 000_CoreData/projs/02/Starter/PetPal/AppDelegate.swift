@@ -15,9 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	var window: UIWindow?
     
     lazy var persistentContainer: NSPersistentContainer = {
+
         let container = NSPersistentContainer(name: "PatPal")
         
-        
+
         // need to load up our data model.
         
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
@@ -65,8 +66,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+        
+        
+        print("Documents Directory: ", FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last ?? "Not Found!")
+        
+        
 		return true
 	}
+    
+/*
+     
+     <NSPersistentStoreDescription: 0x600000449120> (type: SQLite, url: file:///Users/dengjiangzhou/Library/Developer/CoreSimulator/Devices/256445C4-6172-4C10-B3AE-EC94E31CBB77/data/Containers/Data/Application/97E6F1AA-B41E-4FCC-8074-408096F55489/Library/Application%20Support/PatPal.sqlite)
+     
+     Documents Directory:  file:///Users/dengjiangzhou/Library/Developer/CoreSimulator/Devices/256445C4-6172-4C10-B3AE-EC94E31CBB77/data/Containers/Data/Application/97E6F1AA-B41E-4FCC-8074-408096F55489/Documents/
+     
+     
+     
+     */
+    
+    
+    
 
 	func applicationWillResignActive(_ application: UIApplication) {
 		// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

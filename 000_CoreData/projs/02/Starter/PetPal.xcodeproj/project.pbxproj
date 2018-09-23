@@ -123,9 +123,9 @@
 		DD952D761F56D93900AF81B8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2339A34C2152625300EE2DDF /* MainViewController_CoreData.swift */,
 				DD952D661F56D8AA00AF81B8 /* MainViewController.swift */,
 				DD6B333B1F56DAD800F4C248 /* PetsViewController.swift */,
-				2339A34C2152625300EE2DDF /* MainViewController_CoreData.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
