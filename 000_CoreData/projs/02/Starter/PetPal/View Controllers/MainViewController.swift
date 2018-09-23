@@ -2,12 +2,14 @@
 
 import UIKit
 
+import CoreData
+
+
 class MainViewController: UIViewController {
 	@IBOutlet private weak var collectionView:UICollectionView!
 	
-	private var friends = [Friend]()
-	private var filtered = [Friend]()
-	private var isFiltered = false
+    var friends = [Friend]()
+
 	private var friendPets = [String:[String]]()
     
     
@@ -17,7 +19,7 @@ class MainViewController: UIViewController {
     private let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     
-    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     //  get a reference to our context 数据存储上下文
     
     
@@ -33,23 +35,8 @@ class MainViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        do{
-            friends = try context.fetch(Friend.fetchRequest())
-            // 上下文取数据，
-            // this takes a fetch request.
-            
-            
-            
-            //  Friend.fetchRequest()
-            //  this is going to return a preconfigured fetch request for us
-            //  返回一个 预先配置好的 获取数据 请求
-        }
-        catch{
-            fatalError("Could not fetch \(error.localizedDescription)")
-        }   //  catch
-        
-        
+        refresh()
+       
         
         showEditButton()
     }
@@ -136,7 +123,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		let count = isFiltered ? filtered.count : friends.count
+		let count = friends.count
 		return count
 	}
 	
@@ -145,7 +132,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FriendCell", for: indexPath) as! FriendCell
-		let friend = isFiltered ? filtered[indexPath.row] : friends[indexPath.row]
+		let friend = friends[indexPath.row]
 		cell.nameLabel.text = friend.name!
         
         cell.addressLabel.text = friend.address
@@ -196,26 +183,43 @@ extension MainViewController:UISearchBarDelegate {
 		guard let query = searchBar.text else {
 			return
 		}
-		isFiltered = true
-        filtered = friends.filter({(friend: Friend) -> Bool in
-            return friend.name!.contains(query)
-		})
+		
         
+        let request = Friend.fetchRequest() as NSFetchRequest<Friend>
+        request.predicate = NSPredicate(format: "name CONTAINS[cd] %@", query)
+            //  NSPredicate(format: "name CONTAINS &@", query)     错， 崩溃
+        
+        //  NSPredicate(format: "name CONTAINS[cd] %@", query)    大小写不敏感， ignore the case
+        //  NSPredicate(format: "name CONTAINS %@", query)  大小写敏感
+        
+        let sort = NSSortDescriptor(keyPath: \Friend.name, ascending: true)
+        request.sortDescriptors = [sort]
+        
+        
+        do {
+            friends = try context.fetch(request)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+        
+        
+ 
         
 		searchBar.resignFirstResponder()
 		collectionView.reloadData()
-	}
+	}   //  searchBarSearchButtonClicked
 	
     
     
     
 	func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-		isFiltered = false
-		filtered.removeAll()
+		
+        refresh()
+        
 		searchBar.text = nil
 		searchBar.resignFirstResponder()
 		collectionView.reloadData()
-	}
+	}   //  searchBarCancelButtonClicked
 }
 
 
@@ -229,7 +233,7 @@ extension MainViewController:UISearchBarDelegate {
 extension MainViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
 		let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-		let friend = isFiltered ? filtered[selected.row] : friends[selected.row]
+		let friend = friends[selected.row]
 		
         
         friend.photo = UIImagePNGRepresentation(image) as NSData?

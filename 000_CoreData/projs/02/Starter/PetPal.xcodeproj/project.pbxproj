@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2333FCCD2152487C00006976 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333FCCC2152487C00006976 /* Friend+CoreDataProperties.swift */; };
+		2339A34D2152625300EE2DDF /* MainViewController_CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339A34C2152625300EE2DDF /* MainViewController_CoreData.swift */; };
 		2354B664214F9ED800990F2C /* PatPal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2354B662214F9ED800990F2C /* PatPal.xcdatamodeld */; };
 		2354B674214FADC800990F2C /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354B672214FADC800990F2C /* Friend+CoreDataClass.swift */; };
 		DD6B333C1F56DAD800F4C248 /* PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6B333B1F56DAD800F4C248 /* PetsViewController.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		2333FCCC2152487C00006976 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2339A34C2152625300EE2DDF /* MainViewController_CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController_CoreData.swift; sourceTree = "<group>"; };
 		2354B663214F9ED800990F2C /* PatPal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PatPal.xcdatamodel; sourceTree = "<group>"; };
 		2354B672214FADC800990F2C /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DD6B333B1F56DAD800F4C248 /* PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				DD952D661F56D8AA00AF81B8 /* MainViewController.swift */,
 				DD6B333B1F56DAD800F4C248 /* PetsViewController.swift */,
+				2339A34C2152625300EE2DDF /* MainViewController_CoreData.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				2354B674214FADC800990F2C /* Friend+CoreDataClass.swift in Sources */,
 				DD6B33441F56EC2400F4C248 /* FriendCell.swift in Sources */,
 				DD6B333C1F56DAD800F4C248 /* PetsViewController.swift in Sources */,
+				2339A34D2152625300EE2DDF /* MainViewController_CoreData.swift in Sources */,
 				DD719FFB1F578F96008392C8 /* Array+Extensions.swift in Sources */,
 				2333FCCD2152487C00006976 /* Friend+CoreDataProperties.swift in Sources */,
 				DD952D651F56D8AA00AF81B8 /* AppDelegate.swift in Sources */,
