@@ -6,9 +6,10 @@ import CoreData
 
 
 class MainViewController: UIViewController {
+	@IBOutlet private weak var collectionView:UICollectionView!
 	
-    @IBOutlet private weak var collectionView:UICollectionView!
-    public var fetchedRequestController: NSFetchedResultsController<Friend>!
+    var friends = [Friend]()
+
 	private var friendPets = [String:[String]]()
     
     
@@ -22,7 +23,7 @@ class MainViewController: UIViewController {
     //  get a reference to our context 数据存储上下文
     
     
-    public var query = ""
+    private var query = ""
     
 
 	override func viewDidLoad() {
@@ -60,7 +61,7 @@ class MainViewController: UIViewController {
 		if segue.identifier == "petSegue" {
 			if let index = sender as? IndexPath {
 				let pvc = segue.destination as! PetsViewController
-				let friend = fetchedRequestController.object(at: index)
+				let friend = friends[index.row]
 				if let pets = friendPets[friend.name!] {
 					pvc.pets = pets
 				}
@@ -100,7 +101,8 @@ class MainViewController: UIViewController {
    
         refresh()
         
-		collectionView.reloadData()
+		let index = IndexPath(row: friends.index(of: friend)!, section:0)
+		collectionView?.insertItems(at: [index])
 	}
 	//  when a new friend is added,
     //  they are automatically sorted.
@@ -114,10 +116,7 @@ class MainViewController: UIViewController {
     
 	// MARK:- Private Methods
 	private func showEditButton() {
-        guard let objects = fetchedRequestController.fetchedObjects else{
-            return
-        }
-		if objects.count > 0 {
+		if friends.count > 0 {
 			navigationItem.leftBarButtonItem = editButtonItem
 		}
 	}
@@ -133,8 +132,8 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-		return fetchedRequestController.fetchedObjects?.count ?? 0
+		let count = friends.count
+		return count
 	}
 	
     
@@ -142,7 +141,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FriendCell", for: indexPath) as! FriendCell
-		let friend = fetchedRequestController.object(at: indexPath)
+		let friend = friends[indexPath.row]
 		cell.nameLabel.text = friend.name!
         
         cell.addressLabel.text = friend.address
@@ -190,18 +189,27 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
 // Search Bar Delegate
 extension MainViewController:UISearchBarDelegate {
 	func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-		guard let queryStr = searchBar.text else {
+		guard let query = searchBar.text else {
 			return
 		}
-		query = queryStr
+		
         
-        refresh()
-        //  request.predicate = NSPredicate(format: "name CONTAINS[cd] %@", queryStr)
+        let request = Friend.fetchRequest() as NSFetchRequest<Friend>
+        request.predicate = NSPredicate(format: "name CONTAINS[cd] %@", query)
             //  NSPredicate(format: "name CONTAINS &@", query)     错， 崩溃
         
         //  NSPredicate(format: "name CONTAINS[cd] %@", query)    大小写不敏感， ignore the case
         //  NSPredicate(format: "name CONTAINS %@", query)  大小写敏感
         
+        let sort = NSSortDescriptor(keyPath: \Friend.name, ascending: true)
+        request.sortDescriptors = [sort]
+        
+        
+        do {
+            friends = try context.fetch(request)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
         
         
  
@@ -214,7 +222,7 @@ extension MainViewController:UISearchBarDelegate {
     
     
 	func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-		query = ""
+		
         refresh()
         
 		searchBar.text = nil
@@ -234,7 +242,7 @@ extension MainViewController:UISearchBarDelegate {
 extension MainViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
 		let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-		let friend = fetchedRequestController.object(at: selected)
+		let friend = friends[selected.row]
 		
         
         friend.photo = UIImagePNGRepresentation(image) as NSData?

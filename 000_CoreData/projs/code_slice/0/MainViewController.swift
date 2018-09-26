@@ -133,8 +133,11 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-		return fetchedRequestController.fetchedObjects?.count ?? 0
+        guard let objects = fetchedRequestController.fetchedObjects else{
+            return 0
+        }
+		let count = objects.count
+		return count
 	}
 	
     
@@ -234,7 +237,7 @@ extension MainViewController:UISearchBarDelegate {
 extension MainViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
 		let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-		let friend = fetchedRequestController.object(at: selected)
+		let friend = friends[selected.row]
 		
         
         friend.photo = UIImagePNGRepresentation(image) as NSData?

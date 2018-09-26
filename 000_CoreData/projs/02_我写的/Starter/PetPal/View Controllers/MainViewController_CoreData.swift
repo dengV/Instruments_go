@@ -20,13 +20,6 @@ extension MainViewController{
         let request = Friend.fetchRequest() as NSFetchRequest<Friend>
     
         
-        if query.isEmpty == false{
-            request.predicate = NSPredicate(format: "name CONTAINS[cd] %@", query)
-        }
-        // 存在 query , 就增加一个 谓词
-        
-        
-        
         // 大小写，不敏感的写法
         let sort = NSSortDescriptor(key: #keyPath(Friend.name), ascending: true, selector: #selector(NSString.caseInsensitiveCompare(_:)))
         //  非常的漂亮， 不同于 下面 Swift 4 的语法
@@ -56,9 +49,7 @@ extension MainViewController{
         
         
         do {
-            fetchedRequestController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
-            //  这个数据管理控制器， 很厉害
-            try fetchedRequestController.performFetch()
+            friends = try context.fetch(request)
         }catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }

@@ -82,20 +82,18 @@ extension PetsViewController: UICollectionViewDelegate, UICollectionViewDataSour
 // Search Bar Delegate
 extension PetsViewController:UISearchBarDelegate {
 	func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-		guard let queryStr = searchBar.text else {
+		guard let query = searchBar.text else {
 			return
 		}
 		isFiltered = true
 		filtered = pets.filter({(txt) -> Bool in
-			return txt.contains(queryStr)
+			return txt.contains(query)
 		})
 		searchBar.resignFirstResponder()
 		collectionView.reloadData()
 	}
     
 	
-    
-    
 	func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
 		isFiltered = false
 		filtered.removeAll()
